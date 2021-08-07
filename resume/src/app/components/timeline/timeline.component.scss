@@ -1,356 +1,212 @@
-body{margin-top:20px;
-  background:#eee;
-  }
-  /* Timeline */
-  .timeline {
-    list-style: none;
-    padding: 0;
-    position: relative;
-  }
+/* My Resume */
+.profile {
+  margin-bottom: 25px;
+}
+.profile .jobster-user-info {
+  display: inline-block;
+  width: 100%;
+}
+.profile .jobster-user-info .profile-avatar {
+  position: relative;
+  height: 115px;
+  width: 115px;
+  border-radius: 100%;
+  display: inline-block;
+}
+.profile .jobster-user-info .profile-avatar img {
+  border-radius: 100%;
+}
+.profile .jobster-user-info .profile-avatar i {
+  font-size: 16px;
+  color: #21c87a;
+  position: absolute;
+  background: #ffffff;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  bottom: 20px;
+  right: -5px;
+}
 
-  .timeline:before {
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    content: " ";
-    width: 3px;
-    background-color: #6c7293;
-    left: 50%;
-    margin-left: -1.5px;
-  }
+.about-candidate {
+  padding: 25px 0px;
+}
+.about-candidate .candidate-info {
+  margin-bottom: 20px;
+}
 
-  .timeline .timeline-wrapper {
-    display: block;
-    margin-bottom: 20px;
-    position: relative;
-    width: 100%;
-    padding-right: 90px;
-  }
+.resume-experience {
+  padding-left: 10px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  position: relative;
+  padding-right: 50px;
+  background: #f6f6f6;
+}
+.resume-experience:before {
+  position: absolute;
+  left: -40%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #f6f6f6;
+  content: "";
+  z-index: -1;
+  top: 0;
+}
+.resume-experience .jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle {
+  border-color: #f6f6f6;
+}
 
-  .timeline .timeline-wrapper:before {
-    content: " ";
-    display: table;
-  }
+.user-dashboard-info-box .select2-container--default .select2-selection--single .select2-selection__rendered {
+  font-weight: bold;
+  color: #626262;
+}
 
-  .timeline .timeline-wrapper:after {
-    content: " ";
-    display: table;
-    clear: both;
+@media (max-width: 1199px) {
+  .secondary-menu ul li a {
+      padding: 10px 15px;
   }
+}
 
-  .timeline .timeline-wrapper .timeline-panel {
-    border-radius: 2px;
-    padding: 20px;
-    position: relative;
-    background: #ffffff;
-    border-radius: 6px;
-    box-shadow: 1px 2px 35px 0 rgba(1, 1, 1, 0.1);
-    /*width: 35%;
-    margin-left: 15%;*/
-    margin-left: 1%;
-    width: 50%;
+@media (max-width: 991px) {
+  .resume-experience {
+      padding-left: 15px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      padding-right: 15px;
   }
+  .resume-experience:before {
+      content: none;
+  }
+  .secondary-menu ul li {
+      display: inline-block;
+  }
+}
 
-  .timeline .timeline-wrapper .timeline-panel:before {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 2px;
-    content: "";
-    left: 0;
-    right: 0;
+@media (max-width: 575px) {
+  .secondary-menu ul li a {
+      padding: 4px 8px;
   }
+}
 
-  .timeline .timeline-wrapper .timeline-panel:after {
-    position: absolute;
-    top: 10px;
-    right: -14px;
-    display: inline-block;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #ffffff;
-    border-right: 0 solid #ffffff;
-    border-bottom: 14px solid transparent;
-    content: " ";
-  }
-
-  .timeline .timeline-wrapper .timeline-panel .timeline-title {
-    margin-top: 0;
-    color: #001737;
-    text-transform: uppercase;
-  }
-
-  .timeline .timeline-wrapper .timeline-panel .timeline-body p + p {
-    margin-top: 5px;
-  }
-
-  .timeline .timeline-wrapper .timeline-panel .timeline-body ul {
-    margin-bottom: 0;
-  }
-
-  .timeline .timeline-wrapper .timeline-panel .timeline-footer span {
-    font-size: .6875rem;
-  }
-
-  .timeline .timeline-wrapper .timeline-panel .timeline-footer i {
-    font-size: 1.5rem;
-  }
-
-  .timeline .timeline-wrapper .timeline-badge {
-    width: 14px;
-    height: 14px;
-    position: absolute;
-    top: 16px;
-    left: calc(50% - 7px);
-    z-index: 10;
-    border-top-right-radius: 50%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    border-bottom-left-radius: 50%;
-    border: 2px solid #ffffff;
-  }
-
-  .timeline .timeline-wrapper .timeline-badge i {
-    color: #ffffff;
-  }
-
-  .timeline .timeline-wrapper.timeline-inverted {
-    padding-right: 0;
-    padding-left: 90px;
-  }
-
-  .timeline .timeline-wrapper.timeline-inverted .timeline-panel {
-    margin-left: 49%;
-    margin-right: 15%;
-  }
-
-  .timeline .timeline-wrapper.timeline-inverted .timeline-panel:after {
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto;
-  }
-
-  @media (max-width: 767px) {
-    .timeline .timeline-wrapper {
-      padding-right: 150px;
-    }
-    .timeline .timeline-wrapper.timeline-inverted {
-      padding-left: 150px;
-    }
-    .timeline .timeline-wrapper .timeline-panel {
-      width: 60%;
-      margin-left: 0;
-      margin-right: 0;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .timeline .timeline-wrapper .timeline-panel {
-      width: 68%;
-    }
-  }
-
-  .timeline-wrapper-primary .timeline-panel:before {
-    background: #464dee;
-  }
-
-  .timeline-wrapper-primary .timeline-badge {
-    background: #464dee;
-  }
-
-  .timeline-wrapper-secondary .timeline-panel:before {
-    background: #6c7293;
-  }
-
-  .timeline-wrapper-secondary .timeline-badge {
-    background: #6c7293;
-  }
-
-  .timeline-wrapper-success .timeline-panel:before {
-    background: #0ddbb9;
-  }
-
-  .timeline-wrapper-success .timeline-badge {
-    background: #0ddbb9;
-  }
-
-  .timeline-wrapper-info .timeline-panel:before {
-    background: #0ad7f7;
-  }
-
-  .timeline-wrapper-info .timeline-badge {
-    background: #0ad7f7;
-  }
-
-  .timeline-wrapper-warning .timeline-panel:before {
-    background: #fcd539;
-  }
-
-  .timeline-wrapper-warning .timeline-badge {
-    background: #fcd539;
-  }
-
-  .timeline-wrapper-danger .timeline-panel:before {
-    background: #ef5958;
-  }
-
-  .timeline-wrapper-danger .timeline-badge {
-    background: #ef5958;
-  }
-
-  .timeline-wrapper-light .timeline-panel:before {
-    background: #eaeaea;
-  }
-
-  .timeline-wrapper-light .timeline-badge {
-    background: #eaeaea;
-  }
-
-  .timeline-wrapper-dark .timeline-panel:before {
-    background: #001737;
-  }
-
-  .timeline-wrapper-dark .timeline-badge {
-    background: #001737;
-  }
+/*****************************
+  Progress Bar
+*****************************/
+.progress {
+  position: relative;
+  overflow: inherit;
+  height: 3px;
+  margin: 40px 0px 15px;
+  width: 100%;
+  display: inline-block;
+}
+.progress .progress-bar {
+  height: 3px;
+  background: #21c87a;
+}
+.progress .progress-bar-title {
+  position: absolute;
+  left: 0;
+  top: -20px;
+  color: #212529;
+  font-size: 14px;
+  font-weight: 600;
+}
+.progress .progress-bar-number {
+  position: absolute;
+  right: 0;
+  color: #646f79;
+  top: -20px;
+}
 
 
-  /* Cards */
-  .card {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    -ms-box-shadow: none;
-  }
+/* Jobster Candidate */
+.jobster-candidate-timeline {
+  position: relative;
+}
+.jobster-candidate-timeline:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  width: 2px;
+  top: 5px;
+  bottom: 5px;
+  height: calc(100% - 5px);
+  background-color: #eeeeee;
+}
 
-  .card .card-body {
-    padding: 1.75rem 1.75rem;
-  }
+.jobster-candidate-timeline .jobster-timeline-item {
+  display: table;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
 
-  .card .card-body + .card-body {
-    padding-top: 1rem;
-  }
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle {
+  border-radius: 50%;
+  border: 12px solid white;
+  z-index: 1;
+  top: 5px;
+  left: 9px;
+  position: absolute;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle:before {
+  content: "";
+  position: absolute;
+  left: 12px;
+  width: 20px;
+  top: -1px;
+  bottom: 5px;
+  height: 2px;
+  background-color: #eeeeee;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-cricle > i {
+  font-size: 15px;
+  top: -8px;
+  left: -7px;
+  position: absolute;
+  color: #21c87a;
+}
 
-  .card .card-title {
-    color: #001737;
-    margin-bottom: .5rem;
-    text-transform: capitalize;
-    font-size: 0.875rem;
-  }
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info {
+  display: table-cell;
+  vertical-align: top;
+  padding: 5px 0 0 70px;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info h6 {
+  color: #21c87a;
+  margin: 5px 0 0px;
+}
+.jobster-candidate-timeline .jobster-timeline-item .jobster-timeline-info span {
+  color: #212529;
+  font-size: 13px;
+  font-weight: 500;
+}
 
-  .card .card-subtitle {
-    font-weight: 400;
-    margin-top: 0.625rem;
-    margin-bottom: 0.625rem;
-  }
+.jobster-candidate-timeline span.jobster-timeline-time {
+  color: #646f79 !important;
+}
 
-  .card .card-description {
-    margin-bottom: .875rem;
-    font-weight: 400;
-    color: #76838f;
-  }
+.jobster-candidate-timeline .jobster-timeline-icon {
+  border: 2px solid #eeeeee;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  line-height: 42px;
+  text-align: center;
+  background: #ffffff;
+  position: relative;
+  margin-bottom: 20px;
+}
+.jobster-candidate-timeline .jobster-timeline-icon i {
+  font-size: 16px;
+  color: #212529;
+}
 
-  .card.card-outline-success {
-    border: 1px solid #0ddbb9;
-  }
-
-  .card.card-outline-primary {
-    border: 1px solid #464dee;
-  }
-
-  .card.card-outline-warning {
-    border: 1px solid #fcd539;
-  }
-
-  .card.card-outline-danger {
-    border: 1px solid #ef5958;
-  }
-
-  .card.card-rounded {
-    border-radius: 5px;
-  }
-
-  .card.card-faded {
-    background: #b5b0b2;
-    border-color: #b5b0b2;
-  }
-
-  .card.card-circle-progress {
-    color: #ffffff;
-    text-align: center;
-  }
-
-  .card.card-img-holder {
-    position: relative;
-  }
-
-  .card.card-img-holder .card-img-absolute {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-  }
-
-  .card.card-weather .weather-daily .weather-day {
-    opacity: .5;
-    font-weight: 900;
-  }
-
-  .card.card-weather .weather-daily i {
-    font-size: 20px;
-  }
-
-  .card.card-weather .weather-daily .weather-temp {
-    margin-top: .5rem;
-    margin-bottom: 0;
-    opacity: .5;
-    font-size: .75rem;
-  }
-
-  .card-inverse-primary {
-    background: rgba(70, 77, 238, 0.2);
-    border: 1px solid #4047db;
-    color: #353bb5;
-  }
-
-  .card-inverse-secondary {
-    background: rgba(108, 114, 147, 0.2);
-    border: 1px solid #636987;
-    color: #525770;
-  }
-
-  .card-inverse-success {
-    background: rgba(13, 219, 185, 0.2);
-    border: 1px solid #0cc9aa;
-    color: #0aa68d;
-  }
-
-  .card-inverse-info {
-    background: rgba(10, 215, 247, 0.2);
-    border: 1px solid #09c6e3;
-    color: #08a3bc;
-  }
-
-  .card-inverse-warning {
-    background: rgba(252, 213, 57, 0.2);
-    border: 1px solid #e8c434;
-    color: #c0a22b;
-  }
-
-  .card-inverse-danger {
-    background: rgba(239, 89, 88, 0.2);
-    border: 1px solid #dc5251;
-    color: #b64443;
-  }
-
-  .card-inverse-light {
-    background: rgba(234, 234, 234, 0.2);
-    border: 1px solid #d7d7d7;
-    color: #b2b2b2;
-  }
-
-  .card-inverse-dark {
-    background: rgba(0, 23, 55, 0.2);
-    border: 1px solid #001533;
-    color: #00112a;
-  }
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 16px;
+}
