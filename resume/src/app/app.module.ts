@@ -9,6 +9,7 @@ import { MatDividerModule } from '@angular/material/divider'
 import { MatSidenavModule } from '@angular/material/sidenav'
 import { MatButtonModule } from '@angular/material/button'
 import { FlexLayoutModule, FlexModule } from '@angular/flex-layout'
+import { MatExpansionModule } from '@angular/material/expansion'
 
 import { MatMenuModule } from "@angular/material/menu";
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -58,7 +59,8 @@ import { InterestsComponent } from './components/interests/interests.component'
     MatCardModule,
     //RouterModule.forRoot([])
     MatGridListModule,
-    MatListModule
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

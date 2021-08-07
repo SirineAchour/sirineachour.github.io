@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CertificatesComponent implements OnInit {
 
+  panelOpenState = false;
+
   constructor() { }
 
   ngOnInit(): void {
