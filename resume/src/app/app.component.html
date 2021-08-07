@@ -1,0 +1,83 @@
+<div>
+
+  <mat-drawer #drawer>
+    <div fxLayout="column">
+      <div mat-card-avatar class="header-image"></div>
+      <h3 class="header-name">{{name}}</h3>
+      <p class="header-links" fxLayout="row">
+        <a [href]="linkedin" target="_blank" class="icon linkedin"></a>
+        <a [href]="github" target="_blank" class="icon github"></a>
+      </p>
+      <span *ngFor="let link of links" class="side-element">
+        <a mat-button [href]="link.link" fxLayoutAlign="start" (click)="drawer.toggle()">
+          {{link.display}}
+        </a>
+        <mat-divider></mat-divider>
+      </span>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-container fxFlex autosize class="background" fxLayout="column">
+    <mat-toolbar class="navbar-color mat-elevation-z8 p-0 tool" fxLayout="row" fxLayoutAlign="space-between center"
+      style="z-index: 2">
+      <span fxLayout="row" fxLayoutAlign="space-between center">
+        <button mat-button (click)="drawer.toggle()">
+          <!--fxShow="false" fxShow.lt-sm>-->
+          <mat-icon>menu</mat-icon>
+        </button>
+
+        <span fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="15px" class="pl-3">
+          {{name}}
+        </span>
+      </span>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center" (click)="drawer.close()">
+        <span fxLayout="row" fxShow="false" fxShow.gt-sm>
+          <!--<button mat-button routerLink="/page1" routerLinkActive="router-link-active no-border">Page 1</button>
+        <button mat-button routerLink="/page2" routerLinkActive="router-link-active no-border">Page 2</button>-->
+          <nav mat-tab-nav-bar>
+            <a mat-tab-link class="link" *ngFor="let link of links" (click)="activeLink = link.link"
+              [active]="activeLink == link.link" [href]="link.link"> {{link.display}}
+            </a>
+          </nav>
+        </span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon>more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>
+            <mat-icon>download</mat-icon>
+            <span>Download Resume</span>
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="contactme">
+            <mat-icon>voicemail</mat-icon>
+            <span>Contact Me</span>
+          </button>
+        </mat-menu>
+
+        <mat-menu #contactme="matMenu">
+          <button mat-menu-item>Call Me</button>
+          <button mat-menu-item>Email Me</button>
+          <button mat-menu-item>Message Me</button>
+        </mat-menu>
+
+      </div>
+    </mat-toolbar>
+
+    <!--PAGES-->
+    <div (click)="drawer.close()" class="content">
+
+      <div id="about" style="background-color: red; height: 400px;" fxLayout="column" fxLayoutAlign="space-around center">
+<app-about></app-about>
+
+      </div>
+      <div id="education" style="background-color: green; height: 400px;"></div>
+      <div id="experience" style="background-color: pink; height: 400px;"></div>
+      <div id="certificates" style="background-color: blueviolet; height: 400px;"></div>
+      <div id="skills" style="background-color: blue; height: 400px;"></div>
+      <div id="projects" style="background-color: orange; height: 400px;"></div>
+      <div id="contact" style="background-color: yellow; height: 400px;"></div>
+    </div>
+
+  </mat-drawer-container>
+</div>

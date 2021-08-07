@@ -1,0 +1,25 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.linkedin{
+  background-image: url('./assets/icons/linkedin-logo.png');
+}
+
+.github{
+  background-image: url('./assets/icons/github-inverted.png');
+}
+
+.location{
+  background-image: url('./assets/icons/placeholder.png');
+}
+
+.icon {
+  filter: brightness(0.5) sepia(1) saturate(1000%) !important;
+  width: 15px;
+  height: 15px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+}

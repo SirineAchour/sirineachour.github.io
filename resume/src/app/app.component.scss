@@ -1,0 +1,62 @@
+.tool {
+    width: 95%;
+    align-self: center;
+    height: 60px;
+}
+
+::ng-deep .mat-tab-link {
+    min-width: 0px !important;
+    width: auto !important;
+    height: 60px !important;
+}
+
+.side-element{
+  width: 200px;
+}
+
+.side-element a{
+  height: 50px;
+  align-items: center !important;
+}
+
+::ng-deep mat-drawer-content{
+  display: contents !important;
+}
+
+::ng-deep mat-drawer{
+  position: fixed !important;
+}
+
+::ng-deep mat-toolbar{
+  position: fixed;
+}
+
+.header-image {
+  background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+  background-size: cover;
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  align-self: center;
+  margin-top: 30px;
+}
+
+.header-name{
+  align-self: center;
+  margin-top: 10px;
+}
+
+
+
+.header-links{
+  align-self: center;
+}
+
+.content{
+display: inline;
+}
+
+.content div{
+  padding-top: 60px;
+}
+
