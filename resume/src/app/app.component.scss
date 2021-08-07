@@ -65,3 +65,15 @@ display: inline;
   background-repeat: repeat-x;
 background-size: 100% 70%;
 }*/
+
+.name{
+  margin-left: 20px;
+}
+
+::ng-deep mat-icon.l-icon{
+  vertical-align: baseline !important;
+}
+
+::ng-deep mat-icon.ll-icon{
+  vertical-align: text-bottom !important;
+}

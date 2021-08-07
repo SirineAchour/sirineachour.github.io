@@ -1,37 +1,64 @@
 <div fxLayout="row" fxLayoutAlign="center center">
-  <mat-card fxLayout="row" fxLayoutAlign="space-between center" fxFlex="95">
-    <div fxLayout="column" fxFlex="30">
+  <mat-card fxLayout="row" fxLayoutAlign="space-around center" fxFlex="85">
+    <div fxFlex="5"></div>
+    <div fxLayout="column">
       <div mat-card-avatar class="about-image"></div>
       <!--<h3 class="about-name">{{name}}</h3>-->
-      <span fxLayout="row" fxLayoutAlign="center center" class="buttons">
-        <button mat-raised-button color="accent">Download CV</button>
-        <button mat-raised-button color="primary">Contact</button>
-      </span>
+
     </div>
+<div fxFlex="10"></div>
 
     <div fxFlex>
-      <div fxLayout="column" fxLayoutAlign="space-around stretch">
-        <h1>{{name}}</h1>
-        <h3> About me About me About me About me About me About me About me </h3>
+      <div fxLayout="column" fxLayoutAlign="space-around stretch" class="name-stuff">
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="name-stuff">
+          <h1>{{name}}</h1>
+          <span class="buttons">
+            <button mat-raised-button color="accent">Download CV</button>
+            <button mat-raised-button color="primary">Contact</button>
+          </span>
+        </div>
+        <h2> Software engineer </h2>
+        <h3> ma7leni w 5addema w lkol <br> also into barcha stuff </h3>
         <mat-list>
           <mat-list-item>
             <div fxFlex="50">Age : </div>
-            <div fxFlex="50"> 5 </div>
+            <div fxFlex="50"> {{age}} </div>
           </mat-list-item>
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item>
+            <div fxFlex="50">Gender : </div>
+            <div fxFlex="50"> {{gender}} </div>
+          </mat-list-item>
+
           <mat-divider [inset]="true"></mat-divider>
           <mat-list-item>
             <div fxFlex="50">Address : </div>
-            <div fxFlex="50"> jk,l5 </div>
+            <div fxFlex="50"> {{address}} </div>
           </mat-list-item>
           <mat-divider [inset]="true"></mat-divider>
           <mat-list-item>
+            <div fxFlex="50">Status : </div>
+            <div fxFlex="50"> 5th year software engineering student </div>
+          </mat-list-item>
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item>
+            <div fxFlex="50">Looking for : </div>
+            <div fxFlex="50"> End of studies internship</div>
+          </mat-list-item>
+          <!--<mat-divider [inset]="true"></mat-divider>
+          <mat-list-item>
             <div fxFlex="50">Email : </div>
-            <div fxFlex="50"> 5 bjnlm,knjb </div>
+            <div fxFlex="50"> {{email}} </div>
           </mat-list-item>
           <mat-divider [inset]="true"></mat-divider>
           <mat-list-item>
             <div fxFlex="50">Phone : </div>
-            <div fxFlex="50"> 5 bjnlm,knjb </div>
+            <div fxFlex="50"> {{phone}}</div>
+          </mat-list-item>-->
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item>
+            <div fxFlex="50">Availablity : </div>
+            <div fxFlex="50"> Full-time</div>
           </mat-list-item>
         </mat-list>
       </div>
@@ -42,6 +69,6 @@
     <p><a [href]="linkedin" target="_blank" class="icon linkedin"></a> linkedin.com/in/sirine-achour/</p>
     <p><a [href]="github" target="_blank" class="icon github"></a> github.com/sirineachour</p>-->
     </div>
-
+    <div fxFlex="5"></div>
   </mat-card>
 </div>

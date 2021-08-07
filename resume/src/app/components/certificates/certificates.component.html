@@ -1,28 +1,70 @@
 <div fxLayout="row" fxLayoutAlign="center center">
   <div fxFlex="95">
     <h2>Certificates</h2>
-    <mat-accordion>
-      <mat-expansion-panel hideToggle>
+    <mat-accordion [multi]="true" #accord="matAccordion">
+      <mat-expansion-panel>
         <mat-expansion-panel-header>
           <mat-panel-title>
-            This is the expansion title
+            <strong>Introduction to Containers with Docker, Kubernetes and OpenShift</strong>
+            <small class="text-muted"> Aug 2021</small>
           </mat-panel-title>
-          <mat-panel-description>
-            This is a summary of the content
-          </mat-panel-description>
         </mat-expansion-panel-header>
-        <p>This is the primary content of the panel.</p>
+        <br>
+        <button mat-stroked-button color="primary"> View Certificate </button>
       </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <strong>Pentesting and Securing Web Applications (Ethical Hacking)</strong>
+            <small class="text-muted"> Aug 2021</small>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          - &nbsp; Injection
+        </p>
+        <br>
+        <button mat-stroked-button color="primary"> View Certificate </button>
+      </mat-expansion-panel>
+
       <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
         <mat-expansion-panel-header>
           <mat-panel-title>
-            Self aware panel
+            <strong>Google IT Automation with Python Specialization Certificate</strong>
+            <small class="text-muted"> Aug 2020</small>
           </mat-panel-title>
-          <mat-panel-description>
-            Currently I am {{panelOpenState ? 'open' : 'closed'}}
-          </mat-panel-description>
         </mat-expansion-panel-header>
-        <p>I'm visible because I am open</p>
+        <p>
+          - &nbsp; Crash Course on Python
+          <br>
+          - &nbsp; Using Python to Interact with the Operating System
+          <br>
+          - &nbsp; Introduction to Git and GitHub
+          <br>
+          - &nbsp; Troubleshooting and Debugging Techniques
+          <br>
+          - &nbsp; Configuration Management and the Cloud
+          <br>
+          - &nbsp; Automating Real-World Tasks with Python
+        </p>
+        <br>
+        <button mat-stroked-button color="primary"> View Certificate </button>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            <strong>
+              General english diploma with honors
+              </strong>
+            <small class="text-muted"> May 2015</small>
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>
+          Upper intermediate level general english
+        </p>
+        <br>
+        <button mat-stroked-button color="primary"> View Certificate </button>
       </mat-expansion-panel>
     </mat-accordion>
 

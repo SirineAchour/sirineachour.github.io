@@ -1,32 +1,34 @@
+<ul class="timeline timeline-left">
+  <li class="timeline-inverted timeline-item" *ngFor="let event of events">
+    <div class="timeline-badge success">
+      <mat-icon>{{event.icon}}</mat-icon>
+    </div>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <span class="title-date">
+          <h3 class="timeline-title">
+            <strong>
+              {{event.title}}
+            </strong>
+          </h3>
+          &nbsp;
+          &nbsp;
+          <small class="text-muted">{{event.date}}</small>
+        </span>
 
-        <div class="resume-box">
-          <ul>
-            <li>
-              <div class="icon">
-                <i class="fas fa-user-graduate"></i>
-              </div>
-              <span class="time">2019 - Present</span>
-              <h5>Art Director - Facebook Inc</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua iojop hn ygfvgbh yftcvgb uygft ègtyftv tf vtcfvg yfygjhkj rtfryguh tfxrdfgth rcytgu hftrcygu rtcfghjb tcygv tfcghj  xtfcygvbhh tfcgvbhn ytfrxcfvb tfrxdcfgvhb dxcfgvbh gfdrxcfghbyfrtdc fvgb.</p>
-            </li>
-            <li>
-              <div class="icon">
-                <i class="fas fa-user-graduate"></i>
-              </div>
-              <span class="time">2019 - Present</span>
-              <h5>Art Director - Facebook Inc</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </li>
-            <li>
-              <div class="icon">
-                <i class="fas fa-user-graduate"></i>
-              </div>
-              <span class="time">2019 - Present</span>
-              <h5>Art Director - Facebook Inc</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.</p>
-            </li>
-          </ul>
-        </div>
+        <p>
+          <strong>
+            {{event.location}}
+          </strong>
+        </p>
+      </div>
+      <div class="timeline-body">
+        <p [innerHtml]="event.content">
+        </p>
+        <button mat-raised-button color="primary" *ngFor="let link of event.links">
+          <a> {{link.display}}</a>
+        </button>
+      </div>
+    </div>
+  </li>
+</ul>

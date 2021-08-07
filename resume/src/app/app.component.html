@@ -22,10 +22,9 @@
       style="z-index: 2">
       <span fxLayout="row" fxLayoutAlign="space-between center">
         <button mat-button (click)="drawer.toggle()" fxShow="false" fxShow.lt-md>
-          <mat-icon>menu</mat-icon>
+          <mat-icon class="ll-icon">menu</mat-icon>
         </button>
-
-        <span fxLayout="row" fxLayoutAlign="start center" fxLayoutGap="15px" class="pl-3">
+        <span fxLayout="row" fxLayoutAlign="start center"  class="name">
           {{name}}
         </span>
       </span>
@@ -41,7 +40,7 @@
           </nav>
         </span>
         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-          <mat-icon>more_vert</mat-icon>
+          <mat-icon class="l-icon">more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
           <button mat-menu-item>
@@ -66,28 +65,28 @@
     <!--PAGES-->
     <div (click)="drawer.close()" class="content"  fxLayout="column" fxLayoutAlign="start">
 
-      <div id="about" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
+      <div id="about" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
         <app-about></app-about>
       </div>
-      <div id="education" >
+      <div id="education" class="scroll">
         <app-education></app-education>
       </div>
-      <div id="experience">
+      <div id="experience" class="scroll">
         <app-experience></app-experience>
       </div>
-      <div id="certificates">
+      <div id="certificates" class="scroll">
         <app-certificates></app-certificates>
       </div>
-      <div id="skills">
+      <div id="skills" class="scroll">
         <app-skills></app-skills>
       </div>
-      <div id="projects">
+      <div id="projects" class="scroll">
         <app-projects></app-projects>
       </div>
-      <div id="interests">
+      <div id="interests" class="scroll">
         <app-interests></app-interests>
       </div>
-      <div id="contact">
+      <div id="contact" class="scroll">
         <app-contact></app-contact>
       </div>
 

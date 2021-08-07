@@ -9,12 +9,14 @@ mat-card{
 }
 
 .about-image {
+  /*background-image: url('../../../assets/img/me.jpeg');*/
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
-  height: 200px;
-  width: 200px;
+  height: 400px;
+  width: 250px;
   border-radius: 100px;
   align-self: center;
+  margin-bottom: 30px;
 }
 
 .about-name{
@@ -23,7 +25,9 @@ mat-card{
 }
 
 mat-card{
-  margin-top: 60px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .icon{
@@ -31,6 +35,15 @@ mat-card{
 }
 
 .buttons button{
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   margin-right: 5px;
+}
+
+.name-stuff h1{
+  font-size: 40px;
+  margin-bottom: 0px;
+}
+
+.name-stuff h2{
+  margin-bottom: 30px;
 }

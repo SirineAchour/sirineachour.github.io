@@ -16,37 +16,37 @@ export class AppComponent implements OnInit {
   linkedin;
   github;
 
-  constructor(){}
+  constructor() { }
 
   ngOnInit(): void {
     //console.log(this.router)
     this.linkedin = DataService.linkedin
     this.github = DataService.github
-    this.name= DataService.my_name
+    this.name = DataService.my_name
     this.links = [
       {
         display: "About",
-        link:"#about"
+        link: "#about"
       },
       {
         display: "Education",
-        link:"#education"
+        link: "#education"
       },
       {
         display: "Experience",
-        link:"#experience"
+        link: "#experience"
       },
       {
         display: "Certificates",
-        link:"#certificates"
+        link: "#certificates"
       },
       {
         display: "Skills",
-        link:"#skills"
+        link: "#skills"
       },
       {
         display: "Projects",
-        link:"#projects"
+        link: "#projects"
       },
       {
         display: "Interests",
@@ -54,9 +54,30 @@ export class AppComponent implements OnInit {
       },
       {
         display: "Contact",
-        link:"#contact"
+        link: "#contact"
       }
     ];
+
+
     this.activeLink = this.links[0].link;
+
+    let self = this
+    $(window).scroll(function () {
+
+      var winHeight = $(this).height();
+      var scrollTop = $(this).scrollTop();
+      var scrolls = $(".scroll");
+
+      for (let index = 0; index < scrolls.length; index++) {
+        const element = scrolls[index];
+        var elemHeight = $(element).height();
+        var elementTop = $(element).position().top;
+
+        if (elementTop < scrollTop + winHeight && scrollTop < elementTop + elemHeight) {
+          self.activeLink = "#" + $(element).attr("id")
+          return
+        }
+      }
+    });
   }
 }
