@@ -21,8 +21,7 @@
     <mat-toolbar class="navbar-color mat-elevation-z8 p-0 tool" fxLayout="row" fxLayoutAlign="space-between center"
       style="z-index: 2">
       <span fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button (click)="drawer.toggle()">
-          <!--fxShow="false" fxShow.lt-sm>-->
+        <button mat-button (click)="drawer.toggle()" fxShow="false" fxShow.lt-md>
           <mat-icon>menu</mat-icon>
         </button>
 
@@ -65,18 +64,33 @@
     </mat-toolbar>
 
     <!--PAGES-->
-    <div (click)="drawer.close()" class="content">
+    <div (click)="drawer.close()" class="content"  fxLayout="column" fxLayoutAlign="start">
 
-      <div id="about" style="background-color: red; height: 400px;" fxLayout="column" fxLayoutAlign="space-around center">
-<app-about></app-about>
-
+      <div id="about" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
+        <app-about></app-about>
       </div>
-      <div id="education" style="background-color: green; height: 400px;"></div>
-      <div id="experience" style="background-color: pink; height: 400px;"></div>
-      <div id="certificates" style="background-color: blueviolet; height: 400px;"></div>
-      <div id="skills" style="background-color: blue; height: 400px;"></div>
-      <div id="projects" style="background-color: orange; height: 400px;"></div>
-      <div id="contact" style="background-color: yellow; height: 400px;"></div>
+      <div id="education" >
+        <app-education></app-education>
+      </div>
+      <div id="experience">
+        <app-experience></app-experience>
+      </div>
+      <div id="certificates">
+        <app-certificates></app-certificates>
+      </div>
+      <div id="skills">
+        <app-skills></app-skills>
+      </div>
+      <div id="projects">
+        <app-projects></app-projects>
+      </div>
+      <div id="contact">
+        <app-contact></app-contact>
+      </div>
+
+      <div id="interests">
+        <app-interests></app-interests>
+      </div>
     </div>
 
   </mat-drawer-container>

@@ -1,30 +1,47 @@
-<mat-card fxLayout="row" fxLayoutAlign="space-between center">
-  <div fxLayout="column" >
-    <div mat-card-avatar class="about-image"></div>
-    <h3 class="about-name">{{name}}</h3>
-  </div>
-
-  <div fxFill>
-    <div fxLayout="column">
-      <div>
-        <div fxFlex="50">Age : </div>
-        <div fxFlex="50"> 5 </div>
-      </div>
-      <div>
-        <div fxFlex="50">Address : </div>
-        <div fxFlex="50"> jk,l5 </div>
-      </div>
-      <div>
-        <div fxFlex="50">Email : </div>
-        <div fxFlex="50"> 5 bjnlm,knjb </div>
-      </div>
+<div fxLayout="row" fxLayoutAlign="center center">
+  <mat-card fxLayout="row" fxLayoutAlign="space-between center" fxFlex="95">
+    <div fxLayout="column" fxFlex="30">
+      <div mat-card-avatar class="about-image"></div>
+      <!--<h3 class="about-name">{{name}}</h3>-->
+      <span fxLayout="row" fxLayoutAlign="center center" class="buttons">
+        <button mat-raised-button color="accent">Download CV</button>
+        <button mat-raised-button color="primary">Contact</button>
+      </span>
     </div>
 
-    <!--<p><a href="https://www.google.com/maps/place/Cit%C3%A9+Olympique,+Tunis/@36.8359808,10.1933136,17z/data=!3m1!4b1!4m5!3m4!1s0x12fd34eb07a3b3d3:0x23c5f2a17f328a58!8m2!3d36.8366471!4d10.1948404" target="_blank" class="icon location"></a> Cité Olympique, Menzah 1, Tunis - Tunisia</p>
+    <div fxFlex>
+      <div fxLayout="column" fxLayoutAlign="space-around stretch">
+        <h1>{{name}}</h1>
+        <h3> About me About me About me About me About me About me About me </h3>
+        <mat-list>
+          <mat-list-item>
+            <div fxFlex="50">Age : </div>
+            <div fxFlex="50"> 5 </div>
+          </mat-list-item>
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item>
+            <div fxFlex="50">Address : </div>
+            <div fxFlex="50"> jk,l5 </div>
+          </mat-list-item>
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item>
+            <div fxFlex="50">Email : </div>
+            <div fxFlex="50"> 5 bjnlm,knjb </div>
+          </mat-list-item>
+          <mat-divider [inset]="true"></mat-divider>
+          <mat-list-item>
+            <div fxFlex="50">Phone : </div>
+            <div fxFlex="50"> 5 bjnlm,knjb </div>
+          </mat-list-item>
+        </mat-list>
+      </div>
+
+      <!--<p><a href="https://www.google.com/maps/place/Cit%C3%A9+Olympique,+Tunis/@36.8359808,10.1933136,17z/data=!3m1!4b1!4m5!3m4!1s0x12fd34eb07a3b3d3:0x23c5f2a17f328a58!8m2!3d36.8366471!4d10.1948404" target="_blank" class="icon location"></a> Cité Olympique, Menzah 1, Tunis - Tunisia</p>
     <p><a href="mailto:sirine.achour@insat.u-carthage.tn" target="_blank" style="background-image: url('../assets/icons/envelope.png');" class="icon"></a> sirine.achour@insat.u-carthage.tn</p>
     <p><a href="tel:+21694032272" target="_blank" style="background-image: url('call-answer.png');" class="icon"></a> +216 94 032 272</p>
     <p><a [href]="linkedin" target="_blank" class="icon linkedin"></a> linkedin.com/in/sirine-achour/</p>
     <p><a [href]="github" target="_blank" class="icon github"></a> github.com/sirineachour</p>-->
-  </div>
+    </div>
 
-</mat-card>
+  </mat-card>
+</div>

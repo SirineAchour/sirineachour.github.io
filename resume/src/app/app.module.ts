@@ -18,11 +18,28 @@ import { MatCardModule } from "@angular/material/card";
 import { RouterLink, RouterModule } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
 import { MatGridListModule } from '@angular/material/grid-list'
+import { MatListModule } from '@angular/material/list';
+import { TimelineComponent } from './components/timeline/timeline.component';
+import { EducationComponent } from './components/education/education.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { CertificatesComponent } from './components/certificates/certificates.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { InterestsComponent } from './components/interests/interests.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    TimelineComponent,
+    EducationComponent,
+    ExperienceComponent,
+    CertificatesComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
+    InterestsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +57,8 @@ import { MatGridListModule } from '@angular/material/grid-list'
     MatTabsModule,
     MatCardModule,
     //RouterModule.forRoot([])
-    MatGridListModule
+    MatGridListModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

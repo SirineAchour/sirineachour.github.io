@@ -49,6 +49,10 @@ export class AppComponent implements OnInit {
         link:"#projects"
       },
       {
+        display: "Interests",
+        link: "#interests"
+      },
+      {
         display: "Contact",
         link:"#contact"
       }

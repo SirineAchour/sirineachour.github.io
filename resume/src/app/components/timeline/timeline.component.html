@@ -1,0 +1,21 @@
+<div class="timeline">
+  <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1" *ngFor="let event of events">
+    <div class="timeline__event__icon ">
+      <mat-icon>download</mat-icon>
+      <div class="timeline__event__date">
+        {{event.date}}
+      </div>
+    </div>
+    <div class="timeline__event__content ">
+      <div class="timeline__event__title">
+        {{event.title}}
+      </div>
+      <div class="timeline__event__description">
+        <p>
+          {{event.content}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,5 +1,6 @@
-#about mat-card{
+mat-card{
   height: max-content;
+  /*width: 95%;*/
 }
 
 #about mat-card div{
@@ -29,3 +30,7 @@ mat-card{
   display: inline-block;
 }
 
+.buttons button{
+  margin-top: 10px;
+  margin-right: 5px;
+}
