@@ -54,17 +54,22 @@
 
 .content{
 display: inline;
+/*background: rgb(253,45,84);
+background: linear-gradient(0deg, rgba(45,253,65, 0.034) 0%, rgba(34, 101, 195, 0.034) 63%);*/
+
+background: rgba(34, 117, 195, 0.089);/*
+background: linear-gradient(0deg, rgba(0,218,21,0.0289915795419731) 0%, rgba(34,118,195,0.1264705711386117) 63%);*/
 }
 
 .content div{
   padding-top: 60px;
 }
-/*
+
 #about{
-  background-image: url('../assets/backgrounds/7.jpg');
+  background-image: url('../assets/backgrounds/3.jpg');
   background-repeat: repeat-x;
 background-size: 100% 70%;
-}*/
+}
 
 .name{
   margin-left: 20px;

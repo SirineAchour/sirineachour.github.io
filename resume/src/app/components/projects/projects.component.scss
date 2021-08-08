@@ -1,0 +1,23 @@
+.card{
+  width: 47%;
+  max-width: 47%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.cards {
+  /*
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;*/
+ /* max-height: 200vh;*/
+ display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+max-height: 200vh;
+}
