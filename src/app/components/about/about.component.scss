@@ -1,6 +1,7 @@
 mat-card{
   height: max-content;
   /*width: 95%;*/
+  flex-wrap: wrap;
 }
 
 #about mat-card div{
@@ -46,4 +47,8 @@ mat-card{
 
 .name-stuff h2{
   margin-bottom: 30px;
+}
+
+.name-stuff-2{
+  flex-wrap: wrap-reverse;
 }
