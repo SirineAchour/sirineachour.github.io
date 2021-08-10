@@ -21,3 +21,12 @@ align-items: flex-start;
 align-content: flex-start;
 max-height: 200vh;
 }
+
+::ng-deep .mat-card-header-text{
+  margin: 0px !important;
+}
+
+.big{
+  padding: 10px;
+}
+

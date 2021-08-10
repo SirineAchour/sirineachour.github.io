@@ -10,12 +10,12 @@ mat-card{
 }
 
 .about-image {
-  /*background-image: url('../../../assets/img/me.jpeg');*/
+  /*background-image: url('../../../assets/img/me-1.png');*/
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
-  height: 400px;
-  width: 250px;
-  border-radius: 100px;
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
   align-self: center;
   margin-bottom: 30px;
 }
@@ -51,4 +51,8 @@ mat-card{
 
 .name-stuff-2{
   flex-wrap: wrap-reverse;
+}
+
+.header-links{
+  align-self: center;
 }

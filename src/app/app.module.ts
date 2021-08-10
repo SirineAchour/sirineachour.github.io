@@ -61,7 +61,8 @@ import { InterestsComponent } from './components/interests/interests.component'
     MatGridListModule,
     MatListModule,
     MatExpansionModule,
-    MatChipsModule
+    MatChipsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -15,6 +15,7 @@ export class EducationComponent implements OnInit {
       {
         date: "2017 - Present",
         location: "National Institute of Applied Sciences and Technology",
+        location_link: "http://www.insat.rnu.tn/",
         title: "National Engineering Diploma",
         icon: "laptop",
         content: "Major: Software engineering <br><br> This invovled a focus on software design, software architecture, software development, IT project management, cybersecurity and DevOps.",

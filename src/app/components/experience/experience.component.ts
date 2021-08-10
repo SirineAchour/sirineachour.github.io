@@ -15,10 +15,11 @@ export class ExperienceComponent implements OnInit {
       {
         date: "Apr 2021 - Present",
         location: "Parcus",
+        location_link: "https://parcus.fr/",
         title: "Front-end Developper",
         icon: "http",
         content: "\
-        Worked on a website for Nutislab for managing their team, clients and orders.\
+        <a href='https://www.nutislab.com/' target='_blank' class='icon link'></a> Worked on a website for Nutislab for managing their team, clients and orders.\
         <br>\
         This included :\
         <br>\
@@ -38,6 +39,7 @@ export class ExperienceComponent implements OnInit {
       {
         date: "Jul 2021 - Aug 2021",
         location: "Michigean University",
+        location_link: "https://sites.lsa.umich.edu/",
         title: "DevOps Engineering Intern",
         icon: "laptop",
         content: "\
@@ -63,6 +65,7 @@ export class ExperienceComponent implements OnInit {
       {
         date: "Jul 2020 - Aug 2020",
         location: "DOT IT",
+        location_link: "http://www.dotit-corp.com/",
         title: "Web Development Intern",
         icon: "http",
         content: "\

@@ -82,3 +82,10 @@ background-size: 100% 70%;
 ::ng-deep mat-icon.ll-icon{
   vertical-align: text-bottom !important;
 }
+
+.up{
+  position: fixed;
+bottom: 0;
+right: 0;
+margin: 20px;
+}

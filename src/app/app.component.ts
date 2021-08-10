@@ -15,10 +15,12 @@ export class AppComponent implements OnInit {
   name;
   linkedin;
   github;
+  scrollTop
 
   constructor() { }
 
   ngOnInit(): void {
+    this.scrollTop = 0
     //console.log(this.router)
     this.linkedin = DataService.linkedin
     this.github = DataService.github
@@ -65,7 +67,7 @@ export class AppComponent implements OnInit {
     $(window).scroll(function () {
 
       var winHeight = $(this).height();
-      var scrollTop = $(this).scrollTop();
+      self.scrollTop = $(this).scrollTop();
       var scrolls = $(".scroll");
 
       for (let index = 0; index < scrolls.length; index++) {
@@ -73,11 +75,15 @@ export class AppComponent implements OnInit {
         var elemHeight = $(element).height();
         var elementTop = $(element).position().top;
 
-        if (elementTop < scrollTop + winHeight && scrollTop < elementTop + elemHeight) {
+        if (elementTop < self.scrollTop + winHeight && self.scrollTop < elementTop + elemHeight) {
           self.activeLink = "#" + $(element).attr("id")
           return
         }
       }
     });
+  }
+
+  go_up(){
+    window.scrollTo(0,0)
   }
 }

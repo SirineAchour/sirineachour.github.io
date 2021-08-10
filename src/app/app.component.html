@@ -31,8 +31,6 @@
 
       <div fxLayout="row" fxLayoutAlign="space-between center" (click)="drawer.close()">
         <span fxLayout="row" fxShow="false" fxShow.gt-sm>
-          <!--<button mat-button routerLink="/page1" routerLinkActive="router-link-active no-border">Page 1</button>
-        <button mat-button routerLink="/page2" routerLinkActive="router-link-active no-border">Page 2</button>-->
           <nav mat-tab-nav-bar>
             <a mat-tab-link class="link" *ngFor="let link of links" (click)="activeLink = link.link"
               [active]="activeLink == link.link" [href]="link.link"> {{link.display}}
@@ -86,11 +84,16 @@
       <div id="interests" class="scroll">
         <app-interests></app-interests>
       </div>
-      <div id="contact" class="scroll">
+      <div id="contact" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
         <app-contact></app-contact>
       </div>
+      <button mat-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false" fxShow.gt-sm>
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
 
-
+      <button mat-mini-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false" fxShow.lt-md>
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
     </div>
 
   </mat-drawer-container>

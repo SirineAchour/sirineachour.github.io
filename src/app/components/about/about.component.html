@@ -4,6 +4,12 @@
     <div fxLayout="column">
       <div mat-card-avatar class="about-image"></div>
       <!--<h3 class="about-name">{{name}}</h3>-->
+      <p class="header-links" fxLayout="row">
+        <a [href]="github_link" target="_blank" class="icon github"></a>
+        <a [href]="linkedin_link" target="_blank" class="icon linkedin"></a>
+        <a [href]="email_link" target="_blank" class="icon email"></a>
+        <a [href]="phone_link" target="_blank" class="icon phone"></a>
+      </p>
 
     </div>
     <div fxFlex="10"></div>
@@ -14,12 +20,13 @@
           <h1>{{name}}</h1>
           <span class="buttons">
             <button mat-raised-button color="accent">Download CV</button>
-            <button mat-raised-button color="primary">Contact</button>
+            <button mat-raised-button color="primary" (click)="go_to_contact()">Contact</button>
           </span>
         </div>
         <h2> Software engineer </h2>
         <h3> ma7leni w 5addema w lkol <br> also into barcha stuff </h3>
         <mat-list>
+          <mat-divider [inset]="true"></mat-divider>
           <mat-list-item>
             <div fxFlex="50">Age : </div>
             <div fxFlex="50"> {{age}} </div>
@@ -45,30 +52,14 @@
             <div fxFlex="50">Looking for : </div>
             <div fxFlex="50"> End of studies internship</div>
           </mat-list-item>
-          <!--<mat-divider [inset]="true"></mat-divider>
-          <mat-list-item>
-            <div fxFlex="50">Email : </div>
-            <div fxFlex="50"> {{email}} </div>
-          </mat-list-item>
           <mat-divider [inset]="true"></mat-divider>
-          <mat-list-item>
-            <div fxFlex="50">Phone : </div>
-            <div fxFlex="50"> {{phone}}</div>
-          </mat-list-item>-->
-          <mat-divider [inset]="true"></mat-divider>
-          <mat-list-item>
+          <!--<mat-list-item>
             <div fxFlex="50">Availablity : </div>
             <div fxFlex="50"> Full-time</div>
-          </mat-list-item>
+          </mat-list-item>-->
         </mat-list>
       </div>
-
-      <!--<p><a href="https://www.google.com/maps/place/Cit%C3%A9+Olympique,+Tunis/@36.8359808,10.1933136,17z/data=!3m1!4b1!4m5!3m4!1s0x12fd34eb07a3b3d3:0x23c5f2a17f328a58!8m2!3d36.8366471!4d10.1948404" target="_blank" class="icon location"></a> Cité Olympique, Menzah 1, Tunis - Tunisia</p>
-    <p><a href="mailto:sirine.achour@insat.u-carthage.tn" target="_blank" style="background-image: url('../assets/icons/envelope.png');" class="icon"></a> sirine.achour@insat.u-carthage.tn</p>
-    <p><a href="tel:+21694032272" target="_blank" style="background-image: url('call-answer.png');" class="icon"></a> +216 94 032 272</p>
-    <p><a [href]="linkedin" target="_blank" class="icon linkedin"></a> linkedin.com/in/sirine-achour/</p>
-    <p><a [href]="github" target="_blank" class="icon github"></a> github.com/sirineachour</p>-->
-    </div>
+ </div>
     <div fxFlex="5"></div>
   </mat-card>
 </div>

@@ -6,8 +6,10 @@ import { Injectable } from '@angular/core';
 export class DataService {
 
   static my_name: string = "Sirine Achour"
-  static github: string = "https://github.com/sirineachour"
-  static linkedin: string = "https://www.linkedin.com/in/sirine-achour/"
+  static github: string = "github.com/sirineachour"
+  static github_link: string = "https://github.com/sirineachour"
+  static linkedin: string = "linkedin.com/in/sirine-achour/"
+  static linkedin_link: string = "https://www.linkedin.com/in/sirine-achour/"
   static gender: string = "Female"
   static email: string = "Sirine.Achour@insat.u-carthage.tn"
   static phone: string = "+216 94 032 272"
