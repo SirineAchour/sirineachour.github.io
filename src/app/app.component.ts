@@ -9,17 +9,25 @@ import { DataService } from './data.service';
 })
 export class AppComponent implements OnInit {
 
-  title = 'resume';
+  title = 'CV';
   links;
   activeLink;
   name;
   linkedin;
   github;
   scrollTop
+  phone_link
+  email_link
+  linkedin_link
 
   constructor() { }
 
   ngOnInit(): void {
+    this.linkedin_link = DataService.linkedin_link
+    this.name = DataService.my_name
+    this.phone_link = DataService.phone_link
+    this.email_link = DataService.email_link
+
     this.scrollTop = 0
     //console.log(this.router)
     this.linkedin = DataService.linkedin
@@ -85,5 +93,34 @@ export class AppComponent implements OnInit {
 
   go_up(){
     window.scrollTo(0,0)
+  }
+
+  go_to(link_number){
+    let link = this.linkedin_link
+    if(link_number === "1"){
+      link = this.phone_link
+    }
+
+    if(link_number === "2"){
+      link = this.email_link
+    }
+    window.open(
+      link,
+      '_blank' // <- This is what makes it open in a new window.
+    );
+  }
+
+  go_to_contact(){
+    $(window).scrollTop($('#contact').position().top);
+  }
+
+  download_cv(){
+    const link = document.createElement('a');
+    link.setAttribute('target', '_blank');
+    link.setAttribute('href', '../assets/docs/cv.pdf');
+    link.setAttribute('download', `sirine-achour-cv.pdf`);
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
 }

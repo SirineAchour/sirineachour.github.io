@@ -6,7 +6,7 @@
 
         <mat-card-header>
           <div fxLayout="row">
-            <a class="icon github big"></a>
+            <!--<a class="icon github big"></a>-->
             <div>
               <mat-card-title>{{ project.title }}</mat-card-title>
               <mat-card-subtitle>{{ project.date }}</mat-card-subtitle>
@@ -16,6 +16,20 @@
         <mat-card-content>
           <p [innerHTML]="project.description">
           </p>
+          <span *ngIf="project.skills">
+            <br>
+            <span class="inline">
+            Applied skills : &nbsp;
+              <mat-chip-list >
+                <mat-chip  *ngFor="let skill of project.skills" selected>{{skill}}</mat-chip>
+              </mat-chip-list>
+            </span>
+          </span>
+          <br>
+          <br>
+          <span *ngFor="let doc of project.docs">
+          <a mat-flat-button [href]="doc.path" target="_blank" color="primary" class="buttons">{{doc.name}}</a>
+        </span>
         </mat-card-content>
       </mat-card>
     </div>

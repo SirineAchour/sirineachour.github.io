@@ -38,23 +38,25 @@
           </nav>
         </span>
         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
-          <mat-icon class="l-icon">more_vert</mat-icon>
+          <mat-icon class="l-icon fix-right">more_vert</mat-icon>
         </button>
         <mat-menu #menu="matMenu">
-          <button mat-menu-item>
-            <mat-icon>download</mat-icon>
-            <span>Download Resume</span>
+          <button mat-menu-item (click)="download_cv()">
+            <mat-icon class="menu-icon">download</mat-icon>
+            <span>Download CV</span>
           </button>
           <button mat-menu-item [matMenuTriggerFor]="contactme">
-            <mat-icon>voicemail</mat-icon>
+            <span (click)="go_to_contact()">
+            <mat-icon class="menu-icon">voicemail</mat-icon>
             <span>Contact Me</span>
+          </span>
           </button>
         </mat-menu>
 
         <mat-menu #contactme="matMenu">
-          <button mat-menu-item>Call Me</button>
-          <button mat-menu-item>Email Me</button>
-          <button mat-menu-item>Message Me</button>
+          <button mat-menu-item (click)="go_to('1')">Call Me</button>
+          <button mat-menu-item (click)="go_to('2')">Email Me</button>
+          <button mat-menu-item (click)="go_to('3')">Message Me</button>
         </mat-menu>
 
       </div>

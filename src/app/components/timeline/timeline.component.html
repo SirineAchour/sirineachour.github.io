@@ -18,16 +18,29 @@
 
         <p>
           <strong>
-            <a *ngIf="event.location_link" [href]="event.location_link" target="_blank" class="icon link"></a> {{event.location}}
+            <a *ngIf="event.location_link" [href]="event.location_link" target="_blank" class="icon link"></a>
+            {{event.location}}
           </strong>
         </p>
       </div>
       <div class="timeline-body">
         <p [innerHtml]="event.content">
         </p>
-        <button mat-raised-button color="primary" *ngFor="let link of event.links">
-          <a> {{link.display}}</a>
-        </button>
+        <span *ngIf="event.skills">
+          <br>
+          <span class="inline">
+          Applied skills : &nbsp;
+            <mat-chip-list >
+              <mat-chip  *ngFor="let skill of event.skills" color="accent"  selected>{{skill}}</mat-chip>
+            </mat-chip-list>
+          </span>
+        </span>
+        <br>
+        <span *ngFor="let link of event.links">
+          <a class="link" [href]="link.link" target="_blank" mat-flat-button color="primary">
+            {{link.display}}
+          </a>
+        </span>
       </div>
     </div>
   </li>

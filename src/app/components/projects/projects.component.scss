@@ -1,8 +1,11 @@
-.card{
+.card{/*
   width: 47%;
   max-width: 47%;
   margin-left: 30px;
   margin-bottom: 30px;
+  padding: 40px;*/
+  //width: 100%;
+  margin: 30px;
   padding: 40px;
 }
 
@@ -13,13 +16,13 @@
   flex-wrap: wrap;
   align-items: flex-start;
   align-content: flex-start;*/
- /* max-height: 200vh;*/
+ /* max-height: 200vh;*//*
  display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 align-items: flex-start;
 align-content: flex-start;
-max-height: 200vh;
+max-height: 200vh;*/
 }
 
 ::ng-deep .mat-card-header-text{
@@ -28,5 +31,16 @@ max-height: 200vh;
 
 .big{
   padding: 10px;
+}
+
+.buttons{
+  margin-right: 10px;
+}
+.inline{
+  display: block ruby;
+}
+mat-chip{
+  background-color: #eeeaf4   !important;
+  color: black !important;
 }
 

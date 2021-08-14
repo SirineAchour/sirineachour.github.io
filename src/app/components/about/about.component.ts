@@ -34,11 +34,4 @@ export class AboutComponent implements OnInit {
     this.gender = DataService.gender
     this.age = this.data.get_age()
   }
-
-  go_to_contact(){
-    $(window).scrollTop($('#contact').position().top);
-    /*$('html, body').animate({
-      scrollTop: $("#contact").offset().top
-  }, 2000);*/
-  }
 }
