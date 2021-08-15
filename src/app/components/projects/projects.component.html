@@ -6,9 +6,11 @@
 
         <mat-card-header>
           <div fxLayout="row">
-            <!--<a class="icon github big"></a>-->
+            <!--MAYBE TURN PROJECTS INTO EXPANDABLES-->
             <div>
-              <mat-card-title>{{ project.title }}</mat-card-title>
+              <mat-card-title>{{ project.title }}
+                <span class="type" *ngIf="project.type">[{{project.type}}]</span>
+              </mat-card-title>
               <mat-card-subtitle>{{ project.date }}</mat-card-subtitle>
             </div>
           </div>
