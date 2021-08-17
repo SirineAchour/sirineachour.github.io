@@ -136,7 +136,7 @@ export class ProjectsComponent implements OnInit {
         <li>Hashing</li>\
         <li>Encoding </li>\
         <li>Symmetric encryption/decryption</li>\
-        <li>Key genration</li>\
+        <li>Key generation</li>\
         <li>Asymmetric encryption/decryption (RSA/ECIES)</li>\
         <li>Cracking hashes: brute-force, dictionnary attack, simple brute force</li>\
         </ul>\

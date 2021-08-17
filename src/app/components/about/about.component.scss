@@ -10,7 +10,7 @@ mat-card{
 }
 
 .about-image {
-  /*background-image: url('../../../assets/img/me-1.png');*/
+  //background-image: url('../../../assets/img/meee.jpg');
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
   height: 300px;
@@ -55,4 +55,7 @@ mat-card{
 
 .header-links{
   align-self: center;
+}
+.icon{
+  scale: 1.2;
 }

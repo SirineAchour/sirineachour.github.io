@@ -21,8 +21,12 @@ export class EducationComponent implements OnInit {
         content: "Major: Software engineering <br><br> This invovled a focus on software design, software architecture, software development, IT project management, cybersecurity, Testing and DevOps.",
         links: [
           {
-            display: "Transcripts",
-            link: "../../../assets/diplomas/"
+            display: "Attestations (french)",
+            link: "../../../assets/docs/insat/attestations.pdf"
+          },
+          {
+            display: "Transcripts (french)",
+            link: "../../../assets/docs/insat/transcripts.pdf"
           }
         ]
       },
