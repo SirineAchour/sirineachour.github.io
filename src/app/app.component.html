@@ -21,7 +21,7 @@
     <mat-toolbar class="navbar-color mat-elevation-z8 p-0 tool" fxLayout="row" fxLayoutAlign="space-between center"
       style="z-index: 2">
       <span fxLayout="row" fxLayoutAlign="space-between center">
-        <button mat-button (click)="drawer.toggle()" fxShow="false" fxShow.lt-md>
+        <button mat-button (click)="drawer.toggle()" fxShow="false" fxShow.lt-lg>
           <mat-icon class="ll-icon">menu</mat-icon>
         </button>
         <span fxLayout="row" fxLayoutAlign="start center"  class="name">
@@ -30,7 +30,7 @@
       </span>
 
       <div fxLayout="row" fxLayoutAlign="space-between center" (click)="drawer.close()">
-        <span fxLayout="row" fxShow="false" fxShow.gt-sm>
+        <span fxLayout="row" fxShow="false" fxShow.gt-md>
           <nav mat-tab-nav-bar>
             <a mat-tab-link class="link" *ngFor="let link of links" (click)="activeLink = link.link"
               [active]="activeLink == link.link" [href]="link.link"> {{link.display}}
