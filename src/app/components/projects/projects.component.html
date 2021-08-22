@@ -1,5 +1,5 @@
 <div fxLayout="row" fxLayoutAlign="center center">
-  <div fxFlex="95">
+  <div fxFlex="100">
     <h2>Projects</h2>
     <div class="cards">
       <mat-card class="card" *ngFor="let project of projects">
@@ -9,7 +9,6 @@
             <!--MAYBE TURN PROJECTS INTO EXPANDABLES-->
             <div>
               <mat-card-title>{{ project.title }}
-                <span class="type" *ngIf="project.type">[{{project.type}}]</span>
               </mat-card-title>
               <mat-card-subtitle>{{ project.date }}</mat-card-subtitle>
             </div>
@@ -20,9 +19,9 @@
           </p>
           <span *ngIf="project.skills">
             <br>
-            <span class="inline">
-            Applied skills : &nbsp;
-              <mat-chip-list >
+            <span>
+              <mat-chip-list>
+                Applied skills : &nbsp;
                 <mat-chip  *ngFor="let skill of project.skills" selected>{{skill}}</mat-chip>
               </mat-chip-list>
             </span>

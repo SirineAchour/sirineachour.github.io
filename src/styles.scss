@@ -56,3 +56,22 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   color: black;
   margin-right: 10px;
 }
+
+.mat-expansion-panel {
+  margin-bottom: 5px !important;
+}
+
+.mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab, .mat-stroked-button {
+  margin-bottom: 5px !important;
+}
+
+.mat-list-item{
+  min-height: 48px !important;
+  height: auto !important;
+  align-items: center !important;
+display: grid !important;
+}
+
+.mat-chip{
+  height: auto !important;
+}

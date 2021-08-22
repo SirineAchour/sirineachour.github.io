@@ -96,3 +96,18 @@ bottom: 0;
 right: 0;
 margin: 20px;
 }
+
+.line{
+  display: inherit;
+  border-top: 1px black solid;
+  width: 100px;
+}
+
+.center-smaller{
+  width: 85%;
+  align-self: center;
+}
+
+mat-toolbar{
+  width: 85% !important;
+}

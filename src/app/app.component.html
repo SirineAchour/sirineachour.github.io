@@ -17,7 +17,7 @@
     </div>
   </mat-drawer>
 
-  <mat-drawer-container fxFlex autosize class="background" fxLayout="column">
+  <mat-drawer-container fxFlex autosize class="background" fxLayout="column" >
     <mat-toolbar class="navbar-color mat-elevation-z8 p-0 tool" fxLayout="row" fxLayoutAlign="space-between center"
       style="z-index: 2">
       <span fxLayout="row" fxLayoutAlign="space-between center">
@@ -43,7 +43,7 @@
         <mat-menu #menu="matMenu">
           <button mat-menu-item (click)="download_cv()">
             <mat-icon class="menu-icon">download</mat-icon>
-            <span>Download CV</span>
+            <span>Download Resume</span>
           </button>
           <button mat-menu-item [matMenuTriggerFor]="contactme">
             <span (click)="go_to_contact()">
@@ -67,8 +67,8 @@
 
       <div id="about" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
         <app-about></app-about>
-      </div>
-      <div id="education" class="scroll">
+      </div><div class="center-smaller">
+      <div id="education" class="scroll" >
         <app-education></app-education>
       </div>
       <div id="experience" class="scroll">
@@ -89,6 +89,7 @@
       <div id="contact" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
         <app-contact></app-contact>
       </div>
+    </div>
       <button mat-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false" fxShow.gt-sm>
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
