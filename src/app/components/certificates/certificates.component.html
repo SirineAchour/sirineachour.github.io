@@ -1,6 +1,13 @@
 <div fxLayout="row" fxLayoutAlign="center center">
   <div fxFlex="100">
-    <h2>Certificates</h2>
+    <div fxLayout="row" fxLayoutAlign="space-between none">
+      <h2>Certificates</h2>
+      <div>
+        <button mat-button (click)="accord.openAll()">Expand All</button>
+        <button mat-button (click)="accord.closeAll()">Collapse All</button>
+      </div>
+    </div>
+
     <div fxLayout="row" fxLayoutAlign="center start" >
     <mat-accordion [multi]="true" #accord="matAccordion">
       <mat-expansion-panel>

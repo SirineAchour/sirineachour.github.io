@@ -1,11 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit, ViewChild } from '@angular/core';
+import { MatAccordion } from '@angular/material/expansion';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss']
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, AfterViewInit {
+
+  @ViewChild("accord") accord: MatAccordion
+  panelOpenState = true;
+
 
   projects
   constructor() { }
@@ -310,5 +315,9 @@ export class ProjectsComponent implements OnInit {
     this.projects.sort(function (a, b) {
       return a.real_order - b.real_order;
     });
+  }
+
+  ngAfterViewInit() {
+    this.accord.openAll()
   }
 }

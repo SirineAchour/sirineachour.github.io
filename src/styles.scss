@@ -58,7 +58,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .mat-expansion-panel {
-  margin-bottom: 5px !important;
+  margin-bottom: 10px !important;
+border-radius: 5px !important;
 }
 
 .mat-flat-button, .mat-raised-button, .mat-fab, .mat-mini-fab, .mat-stroked-button {
@@ -74,4 +75,10 @@ display: grid !important;
 
 .mat-chip{
   height: auto !important;
+}
+
+.text-muted{
+  position: relative;
+  top: 1px;
+  margin-left: 10px;
 }
