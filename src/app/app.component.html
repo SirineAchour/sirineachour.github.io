@@ -17,14 +17,14 @@
     </div>
   </mat-drawer>
 
-  <mat-drawer-container fxFlex autosize class="background" fxLayout="column" >
+  <mat-drawer-container fxFlex autosize class="background" fxLayout="column">
     <mat-toolbar class="navbar-color mat-elevation-z8 p-0 tool" fxLayout="row" fxLayoutAlign="space-between center"
       style="z-index: 2">
       <span fxLayout="row" fxLayoutAlign="space-between center">
         <button mat-button (click)="drawer.toggle()" fxShow="false" fxShow.lt-lg>
           <mat-icon class="ll-icon">menu</mat-icon>
         </button>
-        <span fxLayout="row" fxLayoutAlign="start center"  class="name">
+        <span fxLayout="row" fxLayoutAlign="start center" class="name">
           {{name}}
         </span>
       </span>
@@ -47,9 +47,9 @@
           </button>
           <button mat-menu-item [matMenuTriggerFor]="contactme">
             <span (click)="go_to_contact()">
-            <mat-icon class="menu-icon">voicemail</mat-icon>
-            <span>Contact Me</span>
-          </span>
+              <mat-icon class="menu-icon">voicemail</mat-icon>
+              <span>Contact Me</span>
+            </span>
           </button>
         </mat-menu>
 
@@ -63,38 +63,41 @@
     </mat-toolbar>
 
     <!--PAGES-->
-    <div (click)="drawer.close()" class="content"  fxLayout="column" fxLayoutAlign="start">
+    <div (click)="drawer.close()" class="content" fxLayout="column" fxLayoutAlign="start">
 
       <div id="about" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
         <app-about></app-about>
-      </div><div class="center-smaller">
-      <div id="education" class="scroll" >
-        <app-education></app-education>
       </div>
-      <div id="experience" class="scroll">
-        <app-experience></app-experience>
+      <div class="center-smaller">
+        <div id="education" class="scroll">
+          <app-education></app-education>
+        </div>
+        <div id="experience" class="scroll">
+          <app-experience></app-experience>
+        </div>
+        <div id="certificates" class="scroll">
+          <app-certificates></app-certificates>
+        </div>
+        <div id="skills" class="scroll">
+          <app-skills></app-skills>
+        </div>
+        <div id="projects" class="scroll">
+          <app-projects></app-projects>
+        </div>
+        <div id="interests" class="scroll">
+          <app-interests></app-interests>
+        </div>
+        <div id="contact" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
+          <app-contact></app-contact>
+        </div>
       </div>
-      <div id="certificates" class="scroll">
-        <app-certificates></app-certificates>
-      </div>
-      <div id="skills" class="scroll">
-        <app-skills></app-skills>
-      </div>
-      <div id="projects" class="scroll">
-        <app-projects></app-projects>
-      </div>
-      <div id="interests" class="scroll">
-        <app-interests></app-interests>
-      </div>
-      <div id="contact" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
-        <app-contact></app-contact>
-      </div>
-    </div>
-      <button mat-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false" fxShow.gt-sm>
+      <button mat-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false"
+        fxShow.gt-sm>
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
 
-      <button mat-mini-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false" fxShow.lt-md>
+      <button mat-mini-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false"
+        fxShow.lt-md>
         <mat-icon>keyboard_arrow_up</mat-icon>
       </button>
     </div>
