@@ -82,3 +82,23 @@ display: grid !important;
   top: 1px;
   margin-left: 10px;
 }
+
+.mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
+  background-color: #2e359a !important;
+}
+.mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
+  background-color: #c3ff40 !important;
+}/*
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: #2e359a !important;
+  color: #fff !important;
+}*/
+.mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
+  color: #2e359a;
+}
+h2{
+  color : #2e359a;
+}
+.mat-ink-bar {
+  background-color: #8ec41a  !important;
+}
