@@ -84,21 +84,23 @@ display: grid !important;
 }
 
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-  background-color: #2e359a !important;
+  background-color: #126ca0 !important;
 }
 .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
-  background-color: #c3ff40 !important;
+  //background-color: #c3ff40 !important;
+  background-color: #FC9E1D !important;
+color: white !important;
 }/*
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
-  background-color: #2e359a !important;
+  background-color: #103c58 !important;
   color: #fff !important;
 }*/
 .mat-button.mat-primary, .mat-icon-button.mat-primary, .mat-stroked-button.mat-primary {
-  color: #2e359a;
+  color: #103c58;
 }
 h2{
-  color : #2e359a;
+  color : #103c58;
 }
 .mat-ink-bar {
-  background-color: #8ec41a  !important;
+  background-color: #103c58  !important;
 }

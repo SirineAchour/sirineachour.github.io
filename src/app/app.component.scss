@@ -79,8 +79,8 @@ background-color: #f6f7ffff;
 }
 
 #about{
+  //background-image: url('../assets/backgrounds/4.jpg');
   background-image: url('../assets/backgrounds/2.jpg');
-  //background-image: url('../assets/backgrounds/3.jpg');
   background-repeat: repeat-x;
 background-size: 100% 70%;
 }
@@ -124,5 +124,5 @@ mat-toolbar{
 }
 
 a:hover {
-  color: #8ec41a !important;
+  color: #103c58 !important;
 }
