@@ -84,12 +84,15 @@ display: grid !important;
 }
 
 .mat-flat-button.mat-primary, .mat-raised-button.mat-primary, .mat-fab.mat-primary, .mat-mini-fab.mat-primary {
-  background-color: #126ca0 !important;
+  background-color: #234dd0 !important;
 }
 .mat-flat-button.mat-accent, .mat-raised-button.mat-accent, .mat-fab.mat-accent, .mat-mini-fab.mat-accent {
   //background-color: #c3ff40 !important;
-  background-color: #FC9E1D !important;
+  //background-color: #FC9E1D !important;
+//color: white !important;
+background-color: #959cff !important;
 color: white !important;
+
 }/*
 .mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
   background-color: #103c58 !important;
@@ -102,5 +105,9 @@ h2{
   color : #103c58;
 }
 .mat-ink-bar {
-  background-color: #103c58  !important;
+  background-color: #000  !important;
+}
+.mat-tab-label-active {
+  color: #000 !important;
+  opacity: 1 !important;
 }

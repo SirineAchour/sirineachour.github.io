@@ -78,11 +78,13 @@ background-color: #f6f7ffff;
   padding-top: 60px;
 }
 
-#about{
+.content{
   //background-image: url('../assets/backgrounds/4.jpg');
-  background-image: url('../assets/backgrounds/2.jpg');
-  background-repeat: repeat-x;
-background-size: 100% 70%;
+  // 21 25 26
+  background-image: url('../assets/backgrounds/28.jpg');
+  //background-repeat: repeat-x;
+  background-attachment: fixed;
+background-size: 100% 100%;
 }
 
 .name{
@@ -124,5 +126,6 @@ mat-toolbar{
 }
 
 a:hover {
-  color: #103c58 !important;
+  color: black !important;
+  opacity: 1;
 }
