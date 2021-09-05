@@ -8,15 +8,22 @@ main_branch="main"
 target_branch="gh-pages"
 build_dir="docs"
 
-cd "$GITHUB_WORKSPACE"
+cd "${GITHUB_WORKSPACE}"
 
-git config user.name "$GITHUB_ACTOR"
+echo "GITHUB_ACTOR"
+echo ${GITHUB_ACTOR}
+echo "GITHUB_WORKSPACE"
+echo ${GITHUB_WORKSPACE}
+git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
+echo ${git branch}
 git checkout "$target_branch"
-git rebase "${remote_name}/${main_branch}"
+git rebase "$remote_name/$main_branch"
 
+echo "about to run build"
 npm run build
+echo "done building"
 git add "$build_dir"
 
 git commit -m "updated GitHub Pages"

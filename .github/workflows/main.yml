@@ -31,3 +31,5 @@ jobs:
           ./bin/update-gh-pages.sh
         env:
             GITHUB_TOKEN: ${{ secrets.github_token }}
+            GITHUB_ACTOR: ${{ secrets.github_actor }}
+            GITHUB_WORKSPACE: ${{ secrets.github_workspace }}
