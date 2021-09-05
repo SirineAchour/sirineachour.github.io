@@ -27,6 +27,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm install and npm run build
         run: |
+          chmod u+x bin/update-gh-pages.sh
           ./bin/update-gh-pages.sh
         env:
             GITHUB_TOKEN: ${{ secrets.github_token }}

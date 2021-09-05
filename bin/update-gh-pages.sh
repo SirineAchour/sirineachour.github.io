@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-
+echo "here"
 set -eu
-
-repo_uri="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+echo "here 2"
+repo_uri="https://x-access-token:${GITHUB_TOKEN}@github.com/sirineachour.github.io.git"
 remote_name="origin"
 main_branch="main"
 target_branch="gh-pages"
