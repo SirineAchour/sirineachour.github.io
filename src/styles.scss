@@ -102,7 +102,13 @@ color: white !important;
   color: #103c58;
 }
 h2{
-  color : #103c58;
+  color: white;
+background-color: black;
+padding-left: 10px;
+width: 100%;
+box-shadow: 2px 2px 6px #887b7b, -2px -2px 6px #fffdfd;
+border-radius: 5px;
+margin-top: 5px !important;
 }
 .mat-ink-bar {
   background-color: #000  !important;

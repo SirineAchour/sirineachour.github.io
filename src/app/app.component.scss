@@ -29,6 +29,7 @@
 
 ::ng-deep mat-toolbar{
   position: fixed;
+  top: 10px;
 }
 
 .header-image {
@@ -81,7 +82,7 @@ background-color: #f6f7ffff;
 .content{
   //background-image: url('../assets/backgrounds/4.jpg');
   // 21 25 26
-  background-image: url('../assets/backgrounds/28.jpg');
+  background-image: url('../assets/backgrounds/31.jpg');
   //background-repeat: repeat-x;
   background-attachment: fixed;
 background-size: 100% 100%;
@@ -128,4 +129,13 @@ mat-toolbar{
 a:hover {
   color: black !important;
   opacity: 1;
+}
+
+.top-space{
+  height: 10px;
+  width: 100%;
+  background: inherit !important;
+  z-index: 10;
+  position: fixed;
+  top: 0px;
 }
