@@ -22,6 +22,8 @@ git stash
 git checkout "$target_branch"
 git rebase "$remote_name/$main_branch"
 
+echo "about to npm i"
+npm i
 echo "about to run build"
 npm run build
 echo "done building"
