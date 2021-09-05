@@ -24,6 +24,7 @@ git branch
 echo "about to show git stash"
 git stash
 git checkout "$target_branch"
+echo "about to rebase"
 git rebase "$remote_name/$main_branch"
 
 echo "about to npm i"
