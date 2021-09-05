@@ -17,18 +17,19 @@ echo ${GITHUB_WORKSPACE}
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
-echo "about to show git status"
+echo "***about to show git status"
 git status
-echo "about to show git branch"
+echo "***about to show git branch"
 git branch
-echo "about to show git stash"
+echo "***about to show git stash"
 git stash
+echo "***about to show git checkout"
 git checkout "$target_branch"
-echo "about to rebase"
+echo "***about to rebase"
 #git rebase "$remote_name/$main_branch"
 git status
 
-echo "about to npm i"
+echo "***about to npm i"
 npm i
 echo "about to run build"
 npm run build
