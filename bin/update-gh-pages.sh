@@ -17,7 +17,8 @@ echo ${GITHUB_WORKSPACE}
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
-echo $(git branch)
+git branch
+git stash
 git checkout "$target_branch"
 git rebase "$remote_name/$main_branch"
 
