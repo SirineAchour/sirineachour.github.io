@@ -109,6 +109,7 @@ width: 100%;
 box-shadow: 2px 2px 6px #887b7b, -2px -2px 6px #fffdfd;
 border-radius: 5px;
 margin-top: 5px !important;
+height: min-content;
 }
 .mat-ink-bar {
   background-color: #000  !important;
@@ -117,3 +118,13 @@ margin-top: 5px !important;
   color: #000 !important;
   opacity: 1 !important;
 }
+
+.accord-btns{
+  display: inherit;
+}
+
+.accord-btns button{
+  height: min-content !important;
+}
+
+
