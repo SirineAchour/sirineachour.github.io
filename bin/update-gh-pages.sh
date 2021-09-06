@@ -13,11 +13,18 @@ cd "${GITHUB_WORKSPACE}"
 git config user.name "${GITHUB_ACTOR}"
 git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
-echo "***about to show git stash"
-git stash
-echo "***done git stashing"
+echo "branches"
+git branch
+echo "fetching all"
+git fetch --all
+echo "branches"
+git branch
 
-echo "***about to npm i"
+echo "about to show git status"
+git status
+echo "done git stashing"
+
+echo "about to npm i"
 npm i
 echo "about to run build"
 npm run build
