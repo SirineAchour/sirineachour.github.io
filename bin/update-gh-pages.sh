@@ -15,14 +15,16 @@ git config user.email "${GITHUB_ACTOR}@bots.github.com"
 
 echo "branches"
 git branch
+echo "about to show git stash"
+git stash
+echo "done git stashing"
 echo "fetching all"
-git fetch --all
+git checkout gh-pages
+git checkout main
 echo "branches"
 git branch
 
-echo "about to show git status"
-git status
-echo "done git stashing"
+
 
 echo "about to npm i"
 npm i
