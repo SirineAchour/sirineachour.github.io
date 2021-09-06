@@ -26,7 +26,7 @@ echo "done building"
 echo "gonna empty out kol chay"
 
 echo "deleting all but docs"
-rm -rfv !(docs|.git)
+find . -mindepth 1 ! -regex '^./\(docs\|\.git\)\(/.*\)?' -delete
 echo "done deleting"
 ls -a
 #git add "$build_dir"
