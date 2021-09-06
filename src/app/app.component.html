@@ -1,0 +1,108 @@
+<div>
+
+  <mat-drawer #drawer>
+    <div fxLayout="column">
+      <div mat-card-avatar class="header-image"></div>
+      <h3 class="header-name">{{name}}</h3>
+      <p class="header-links" fxLayout="row">
+        <a [href]="linkedin" target="_blank" class="icon linkedin"></a>
+        <a [href]="github" target="_blank" class="icon github"></a>
+      </p>
+      <span *ngFor="let link of links" class="side-element">
+        <a mat-button [href]="link.link" fxLayoutAlign="start" (click)="drawer.toggle()">
+          {{link.display}}
+        </a>
+        <mat-divider></mat-divider>
+      </span>
+    </div>
+  </mat-drawer>
+
+  <mat-drawer-container fxFlex autosize class="background" fxLayout="column">
+    <div class="top-space"></div>
+    <mat-toolbar class="navbar-color mat-elevation-z8 p-0 tool" fxLayout="row" fxLayoutAlign="space-between center"
+      style="z-index: 2">
+      <span fxLayout="row" fxLayoutAlign="space-between center">
+        <button mat-button (click)="drawer.toggle()" fxShow="false" fxShow.lt-lg>
+          <mat-icon class="ll-icon">menu</mat-icon>
+        </button>
+        <span fxLayout="row" fxLayoutAlign="start center" class="name">
+          {{name}}
+        </span>
+      </span>
+
+      <div fxLayout="row" fxLayoutAlign="space-between center" (click)="drawer.close()">
+        <span fxLayout="row" fxShow="false" fxShow.gt-md>
+          <nav mat-tab-nav-bar>
+            <a mat-tab-link class="link" *ngFor="let link of links" (click)="activeLink = link.link"
+              [active]="activeLink == link.link" [href]="link.link"> {{link.display}}
+            </a>
+          </nav>
+        </span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+          <mat-icon class="l-icon fix-right">more_vert</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item (click)="download_cv()">
+            <mat-icon class="menu-icon">download</mat-icon>
+            <span>Download Resume</span>
+          </button>
+          <button mat-menu-item [matMenuTriggerFor]="contactme">
+            <span (click)="go_to_contact()">
+              <mat-icon class="menu-icon">voicemail</mat-icon>
+              <span>Contact Me</span>
+            </span>
+          </button>
+        </mat-menu>
+
+        <mat-menu #contactme="matMenu">
+          <button mat-menu-item (click)="go_to('1')">Call Me</button>
+          <button mat-menu-item (click)="go_to('2')">Email Me</button>
+          <button mat-menu-item (click)="go_to('3')">Message Me</button>
+        </mat-menu>
+
+      </div>
+    </mat-toolbar>
+
+
+    <!--PAGES-->
+    <div (click)="drawer.close()" class="content" fxLayout="column" fxLayoutAlign="start">
+      <p> ihi </p>
+      <div id="about" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
+        <app-about></app-about>
+      </div>
+      <div class="center-smaller">
+        <div id="education" class="scroll">
+          <app-education></app-education>
+        </div>
+        <div id="experience" class="scroll">
+          <app-experience></app-experience>
+        </div>
+        <div id="certificates" class="scroll">
+          <app-certificates></app-certificates>
+        </div>
+        <div id="skills" class="scroll">
+          <app-skills></app-skills>
+        </div>
+        <div id="projects" class="scroll">
+          <app-projects></app-projects>
+        </div>
+        <div id="interests" class="scroll">
+          <app-interests></app-interests>
+        </div>
+        <div id="contact" class="scroll" fxLayout="column" fxLayout="column" fxLayoutAlign="center stretch">
+          <app-contact></app-contact>
+        </div>
+      </div>
+      <button mat-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false"
+        fxShow.gt-sm>
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
+
+      <button mat-mini-fab class="up" color="basic" (click)="go_up()" [disabled]="scrollTop === 0" fxShow="false"
+        fxShow.lt-md>
+        <mat-icon>keyboard_arrow_up</mat-icon>
+      </button>
+    </div>
+
+  </mat-drawer-container>
+</div>

@@ -1,0 +1,47 @@
+<ul class="timeline timeline-left">
+  <li class="timeline-inverted timeline-item" *ngFor="let event of events">
+    <div class="timeline-badge success">
+      <mat-icon>{{event.icon}}</mat-icon>
+    </div>
+    <div class="timeline-panel">
+      <div class="timeline-heading">
+        <span class="title-date">
+          <h3 class="timeline-title">
+            <strong>
+              {{event.title}}
+            </strong>
+          </h3>
+          &nbsp;
+          &nbsp;
+          <small class="text-muted">{{event.date}}</small>
+        </span>
+
+        <p>
+          <strong>
+            <a *ngIf="event.location_link" [href]="event.location_link" target="_blank" class="icon link"></a>
+            {{event.location}}
+          </strong>
+        </p>
+      </div>
+      <div class="timeline-body">
+        <p [innerHtml]="event.content">
+        </p>
+        <span *ngIf="event.skills">
+          <br>
+          <span>
+            <mat-chip-list >
+              Applied skills : &nbsp;
+              <mat-chip  *ngFor="let skill of event.skills" color="accent"  selected>{{skill}}</mat-chip>
+            </mat-chip-list>
+          </span>
+        </span>
+        <br>
+        <span *ngFor="let link of event.links">
+          <a class="link timeline-btn" [href]="link.link" target="_blank" mat-flat-button color="primary">
+            {{link.display}}
+          </a>
+        </span>
+      </div>
+    </div>
+  </li>
+</ul>

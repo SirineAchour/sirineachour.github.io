@@ -1,0 +1,18 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="main">
+  <div fxFlex="100">
+    <h2>Contact</h2>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      <mat-card fxLayout="row" fxLayoutAlign="space-around center" fxFlex="40" class="bg-card">
+        <mat-card fxLayout="row" fxLayoutAlign="space-around center" fxFlex="100" class="inner">
+          <div class="contact-info">
+            <p><a [href]="location_link" target="_blank" class="icon location"></a>{{location }}</p>
+            <p><a [href]="email_link" target="_blank" class="email icon"></a> {{email}}</p>
+            <p><a [href]="phone_link" target="_blank" class="icon phone"></a>{{phone}}</p>
+            <p><a [href]="linkedin_link" target="_blank" class="linkedin icon"></a> {{linkedin}}</p>
+            <p><a [href]="github_link" target="_blank" class="icon github"></a> {{github}}</p>
+          </div>
+        </mat-card>
+      </mat-card>
+    </div>
+  </div>
+</div>

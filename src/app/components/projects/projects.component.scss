@@ -1,0 +1,61 @@
+.card{/*
+  width: 47%;
+  max-width: 47%;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  padding: 40px;*/
+  //width: 100%;
+  margin-bottom: 30px;
+  padding: 40px;
+}
+
+.cards {
+  /*
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;*/
+ /* max-height: 200vh;*//*
+ display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+align-items: flex-start;
+align-content: flex-start;
+max-height: 200vh;*/
+}
+
+::ng-deep .mat-card-header-text{
+  margin: 0px !important;
+}
+
+.big{
+  padding: 10px;
+}
+
+.buttons{
+  margin-right: 10px;
+}
+.inline{
+  display: block ruby;
+}
+mat-chip{
+  background-color: #EEEAF4 !important;
+  color: black !important;
+}
+
+.fix-margin{
+  margin-left: 15px;
+}
+
+.type{
+  font-size: 14px;
+  color: red;
+  position: absolute;
+  right: 40px;
+}
+
+.mat-expansion-panel-header{
+ // height: auto !important;
+  //padding-top: 24px !important;
+}
