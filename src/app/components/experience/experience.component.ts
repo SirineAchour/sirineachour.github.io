@@ -14,22 +14,24 @@ export class ExperienceComponent implements OnInit {
     this.events = [
       {
         date: "Apr 2021 - Present",
-        location: "Parcus",
+        location: "Parcus Digital Solutions",
         location_link: "https://parcus.fr/",
-        title: "Front-end Developper",
+        title: "DevOps Engineer & Frontend Developer",
         icon: "http",
         content: "\
-        Worked, within a team of frontend and backend developpers, on a website for <a href='https://www.nutislab.com/' target='_blank' class='icon link'></a><a href='https://www.nutislab.com/' target='_blank' class='link-word'>Nutislab</a> for managing their team, clients and orders.\
+        I worked, within a team of frontend and backend developpers, on a website for <a href='https://www.nutislab.com/' target='_blank' class='icon link'></a><a href='https://www.nutislab.com/' target='_blank' class='link-word'>Nutislab</a> for managing their team, clients and orders.\
         <br>\
-        This included :\
+        My tasks included, but were not limited to :\
         <br>\
-        - Creating a dynamic form builder from scartch.\
+        - Introducing DevOps practices to a web application.\
         <br>\
-        - Implementing efficiently the orders' life-cycle.\
+        - Designing CI/CD pipelines.\
         <br>\
-        - Managing the different user accounts and their access rights.\
+        - Implementing a dynamic form builder.\
         <br>\
-        - Designing a user-friendly and functional UI.\
+        - Managing user accounts, roles and access rights.\
+        <br>\
+       - Designing a user-friendly and functional UI.\
         ",
         links: [
           {
@@ -38,7 +40,7 @@ export class ExperienceComponent implements OnInit {
           },
         ],
         skills: [
-          "Angular", "Debugging", "Testing", "Web design"
+          "Angular", "Automation", "Debugging","Documentation", "Docker", "Git", "GitHub Actions", "Testing","Web design"
         ]
       },
       {
@@ -48,7 +50,7 @@ export class ExperienceComponent implements OnInit {
         title: "DevOps Engineering Intern",
         icon: "laptop",
         content: "\
-        Worked with a research group in the University of Michigan on updating their Translation Networks site.\
+        I worked with a research group in the University of Michigan on updating their Translation Networks site.\
         <br>\
         This website is a project that was contributed to by a team of art, history, and IT professors as well as librarians and other university students.\
         <br>\
@@ -59,13 +61,13 @@ export class ExperienceComponent implements OnInit {
         <br>\
         - Troubleshooting an AWS server instance.\
         <br>\
-        - Migrating an old Express website to the lastest Node version.\
+        - Migrating a web app to the lastest Node version.\
         <br>\
-        - Analyzing and evaluating files and database tables (<a href='https://github.com/SirineAchour/TN-internship-automation-scripts' target='_blank' class='icon link'></a><a href='https://github.com/SirineAchour/TN-internship-automation-scripts' target='_blank' class='link-word'>automatically !</a>).\
+        - Analyzing and evaluating files and database tables (automatically!).<a href='https://github.com/SirineAchour/TN-internship-automation-scripts' target='_blank' class='icon link'></a>\
         <br>\
-        - Studying, comparing and merging development and production code and <a href='https://github.com/SirineAchour/TN-dev-prod-database-merge-script' target='_blank' class='icon link'></a><a href='https://github.com/SirineAchour/TN-dev-prod-database-merge-script' target='_blank' class='link-word'>databases</a>.\
+        - Studying, comparing and merging<a href='https://github.com/SirineAchour/TN-dev-prod-database-merge-script' target='_blank' class='icon link'></a> development and production code and databases.\
         <br>\
-        - Containerizing the Express website.\
+        - Containerizing a web app.\
         <br>\
         - Providing a thorough documentation.\
         ",
@@ -85,7 +87,7 @@ export class ExperienceComponent implements OnInit {
       },
       {
         date: "Jul 2020 - Aug 2020",
-        location: "DOT IT",
+        location: "DOT IT e-business solutions",
         location_link: "http://www.dotit-corp.com/",
         title: "Web Development Intern",
         icon: "http",

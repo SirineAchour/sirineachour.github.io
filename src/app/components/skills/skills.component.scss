@@ -28,13 +28,11 @@ h4{
 top: 6px;
 }
 
-.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
-  /*background-color: #103c58 !important;
-  color: #fff !important;*/
-  background-color: #126ca0 !important;
-  color: #fff !important;
-}
-
 mat-card{
   padding-bottom: 40px;
+}
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color: #9980c6 !important;
+  color: #fff !important;
 }

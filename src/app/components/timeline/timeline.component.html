@@ -18,8 +18,8 @@
 
         <p>
           <strong>
-            <a *ngIf="event.location_link" [href]="event.location_link" target="_blank" class="icon link"></a>
-            {{event.location}}
+            {{event.location}}<a *ngIf="event.location_link" [href]="event.location_link" target="_blank" class="icon link"></a>
+
           </strong>
         </p>
       </div>

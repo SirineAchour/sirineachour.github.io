@@ -18,7 +18,16 @@ export class EducationComponent implements OnInit {
         location_link: "http://www.insat.rnu.tn/",
         title: "National Engineering Diploma",
         icon: "laptop",
-        content: "Major: Software engineering <br><br> This invovled a focus on software design, software architecture, software development, IT project management, cybersecurity, Testing and DevOps.",
+        content: "\
+        <strong>Major : </strong> Software engineering <br>\
+        <strong>Specilization : </strong> DevOps\
+        <br><br>\
+        This invovled a focus on software design, software architecture, software development, \
+        IT project management, operating systems, advanced algorithmics, cybersecurity, \
+        networks, low level programming, DevOps and Testing.\
+        <br>\
+        In addition to computer science courses, I also had advanced mathematics and advanced physics courses. \
+        ",
         links: [
           {
             display: "Attestations (french)",
