@@ -23,12 +23,12 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         real_order: 1,
         date: "May 2021 - Present",
         description: "\
-        idk la7dha\
+        An end-to-end encrypted and containerized console chatroom.\
+        <br>\
+        I implemented DevSecOps principles while developing this project (trusted images, static code analysis, secrets, ...) \
         ",
         skills: [
-          "Docker",
-          "Docker-compose",
-          "Security",
+          "Cryptography", "Docker", "Docker-compose", "ECIES", "Git","LDAP", "SonarQube", "Security"
         ],
         docs: [
           {
@@ -47,9 +47,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         real_order: 0,
         date: "Jan 2021 - May 2021",
         description: "\
-            This is a single player educational card game that showcases the art work held at the Michigan University library and studies the links between them.\
+            This is a single player educational card game that showcases the art work held at the University of Michigan's library and studies the links between them.\
             <br>\
-            This project, conducted with the collaboration of the University of Michigan research team, had 3 main axis:\
+            I worked, within the University of Michigan researchteam, on the project's 3 main axis:\
             <br><ul>\
             <li>Frontend : This is the game design and implementation part done using Unity.</li>\
             <li>Backend : This part involved the design and implementation of not only a MySQL database but also a RESTful API.</li>\
@@ -59,11 +59,12 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         skills: [
           "AI",
           "Database design",
+          "Documentation",
           "Game design",
           "Git",
           "MySQL",
           "NestJS",
-          "RESTful APIs",
+          "RESTful API",
           "Security",
           "Unity",
         ],
@@ -84,13 +85,16 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         real_order: 1,
         date: "Apr 2021",
         description: "\
-          I develpoped the interface of a sales desktop application.\
+          I develpoped the user interface of a sales desktop application using JavaFX.\
           <br>\
           This application is that of an interactive terminal installed in shopping malls which allows shoppers\
           to take advantage of several offers and promotions proposed by different categories of shops.\
         ",
         skills: [
+          "Design",
+          "Java",
           "JavaFX",
+          "Optimization",
           "SceneBuilder"
         ],
         docs: [
@@ -101,13 +105,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ]
       },
       {
-        title: "End Of Studies Projects Administrative Website",
+        title: "Administrative Website",
         order: 4,
         real_order: 1,
         type: "Web Development",
         date: "Jan 2021 - Feb 2021",
         description: "\
-        A website for managing INSAT's end of studies projects\
+        A website for the staff members of INSAT <a href='http://www.insat.rnu.tn/' target='_blank' class='icon link'></a> to manage students' end of studies projects.\
         ",
         skills: [
           "Angular",
@@ -115,6 +119,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
           "HTML/CSS/JS",
           "MySQL",
           "NestJS",
+          "RESTful API",
           "Web design"
         ],
         docs: [
@@ -148,8 +153,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         \
         ",
         skills: [
-          "Cryptography",
-          "Python"
+          "Cryptography", "ECIES", "Git", "Python", "RSA"
         ],
         docs: [
           {
@@ -158,8 +162,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
           }
         ]
       },
-      /*
-        I think this isnt chuncky enough to be considered a project
+
             {
               title: "GPGTrustWebGraph",
               date: "Dec 2020",
@@ -170,8 +173,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
               \
               ",
               skills: [
+                "Automation",
                 "Cryptography",
-                "Python",
+                "Python"
               ],
               docs: [
                 {
@@ -179,7 +183,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
                   path: "https://github.com/SirineAchour/GPGTrustWebGraph"
                 }
               ]
-            },*/
+            },
       {
         title: "Task Me",
         order: 2,
@@ -202,12 +206,12 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ]
       },
       {
-        title: "Implementations of popular AI algorithms",
+        title: "Implementating popular AI algorithms",
         order: 3,
         real_order: 4,
         date: "Nov 2020 - Jan 2021",
         description: "\
-        For learing purposes, I created 2 basic games that implement popular AI algorithms.\
+        For learing purposes, I created 2 console games that implement popular AI algorithms.\
         <br>\
         The games are : \
         <br>\
@@ -238,6 +242,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         skills: [
           "AI",
           "Complexity of algorithms",
+          "Optimization",
           "Problem solving",
           "Python",
         ],
@@ -261,7 +266,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         description: "\
         This project is a website for posting confessions and asking for advice anonymously.\
         <br>\
-        At the time of making this, I had very strict time constraints but I still managed to finalize it in 2-3 days only.\
         ",
         skills: [
           ".NET Core",
@@ -280,7 +284,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ]
       },
       {
-        title: "Robots",
+        title: "Robotics",
         order: 6,
         real_order: 6,
         date: "Dec 2019 - Feb 2020",
