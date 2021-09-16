@@ -20,13 +20,13 @@ export class EducationComponent implements OnInit {
         icon: "laptop",
         content: "\
         <strong>Major : </strong> Software engineering <br>\
-        <strong>Specilization : </strong> DevOps\
+        <strong>Specialization : </strong> DevOps\
         <br><br>\
         This invovled a focus on software design, software architecture, software development, \
         IT project management, operating systems, advanced algorithmics, cybersecurity, \
         networks, low level programming, DevOps and Testing.\
         <br>\
-        In addition to computer science courses, I also had advanced mathematics and advanced physics courses. \
+        In addition to computer science courses, I also had advanced mathematics and advanced physics courses during the first two years that constitue the preparatory cycle. \
         ",
         links: [
           {
@@ -44,7 +44,7 @@ export class EducationComponent implements OnInit {
         location: "Hammam Susah High School 2",
         title: "Baccalaureate with honors",
         icon: "school",
-        content: "Specialization in Mathematics <br><br>This invloved a focus on mathematics and physics but also biology, human sciences and languages (English, Arabic, French and Spanish).",
+        content: "<strong>Specialization : </strong> Mathematics <br><br>This invloved a focus on mathematics and physics but also biology, human sciences and languages (English, Arabic, French and Spanish).",
         links: [
           {
             display: "Diploma (english)",

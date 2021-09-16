@@ -19,7 +19,8 @@ export class ExperienceComponent implements OnInit {
         title: "DevOps Engineer & Frontend Developer",
         icon: "http",
         content: "\
-        I worked, within a team of frontend and backend developpers, on a website for <a href='https://www.nutislab.com/' target='_blank' class='icon link'></a><a href='https://www.nutislab.com/' target='_blank' class='link-word'>Nutislab</a> for managing their team, clients and orders.\
+        I worked, within a team of frontend and backend developpers, on a website for a company to manage their team, clients and orders.\
+        <br>\
         <br>\
         My tasks included, but were not limited to :\
         <br>\
@@ -27,7 +28,7 @@ export class ExperienceComponent implements OnInit {
         <br>\
         - Designing CI/CD pipelines.\
         <br>\
-        - Implementing a dynamic form builder.\
+        - Implementing a dynamic form builder from scratch.\
         <br>\
         - Managing user accounts, roles and access rights.\
         <br>\
@@ -45,7 +46,7 @@ export class ExperienceComponent implements OnInit {
       },
       {
         date: "Jul 2021 - Aug 2021",
-        location: "Michigean University",
+        location: "Michigan University",
         location_link: "https://sites.lsa.umich.edu/",
         title: "DevOps Engineering Intern",
         icon: "laptop",
@@ -57,11 +58,11 @@ export class ExperienceComponent implements OnInit {
         It provides a collection of digital tools that assist students in connecting ideas, creative activities, and sources.\
         <br>\
         <br>\
-        This internship's tasks included :\
+        My contribution was :\
         <br>\
         - Troubleshooting an AWS server instance.\
         <br>\
-        - Migrating a web app to the lastest Node version.\
+        - Upgrading a web app to the lastest Node version.\
         <br>\
         - Analyzing and evaluating files and database tables (automatically!).<a href='https://github.com/SirineAchour/TN-internship-automation-scripts' target='_blank' class='icon link'></a>\
         <br>\
@@ -69,7 +70,7 @@ export class ExperienceComponent implements OnInit {
         <br>\
         - Containerizing a web app.\
         <br>\
-        - Providing a thorough documentation.\
+        - Providing a thorough documentation of my work and my findings.\
         ",
         links: [
           {
@@ -92,7 +93,8 @@ export class ExperienceComponent implements OnInit {
         title: "Web Development Intern",
         icon: "http",
         content: "\
-        This was my first internship, during which I worked on a website for shopping at a multi-location store.\
+        This was my first internship, during which I learned how to navigate in a professional work environment while working on a website for shopping at a multi-location store.\
+        <br>\
         <br>\
         My contribution was : \
         <br>\
