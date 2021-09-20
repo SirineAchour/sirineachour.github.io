@@ -36,8 +36,8 @@
           </span>
         </span>
         <br>
-        <span *ngFor="let link of event.links">
-          <a [ngClass]="{'disabled': link.disabled}"
+        <span *ngFor="let link of event.links" [ngClass]="{'disabled': link.disabled === true }">
+          <a 
           class="link timeline-btn" [href]="link.link" target="_blank" mat-flat-button color="primary">
             {{link.display}}
           </a>
