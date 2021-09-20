@@ -150,3 +150,13 @@ border-radius: 5px;*/
 .accord-btns button {
   height: min-content !important;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: purple;
+}
+
+::selection {
+  color: white;
+  background: purple;
+}

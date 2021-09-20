@@ -49,11 +49,10 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         description: "\
             This is a single player educational card game that showcases the art work held at the University of Michigan's library and studies the links between them.\
             <br>\
-            I worked, within the University of Michigan researchteam, on the project's 3 main axis:\
+            I worked, within the University of Michigan researchteam, on 2 of the project's 3 main axis:\
             <br><ul>\
             <li>Frontend : This is the game design and implementation part done using Unity.</li>\
             <li>Backend : This part involved the design and implementation of not only a MySQL database but also a RESTful API.</li>\
-            <li>AI Judge : This judge's main task is to evaluate the similarity between 2 cards based on multiple factors (photographic and textual data).</li>\
             </ul>\
         ",
         skills: [
