@@ -175,3 +175,9 @@ mat-chip{
 .timeline-btn{
   //background-color: #9013c0 !important;
 }
+
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}

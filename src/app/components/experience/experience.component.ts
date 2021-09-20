@@ -37,7 +37,8 @@ export class ExperienceComponent implements OnInit {
         links: [
           {
             display: "Recommendation Letter",
-            link: "../../../assets/docs/parcus/rec_letter.pdf"
+            link: "../../../assets/docs/parcus/rec_letter.pdf",
+            disabled: false
           },
         ],
         skills: [
@@ -75,11 +76,13 @@ export class ExperienceComponent implements OnInit {
         links: [
           {
             display: "Attestation",
-            link: "../../../assets/docs/tn/attestation.pdf"
+            link: "../../../assets/docs/tn/attestation.pdf",
+            disabled: false
           },
           {
             display: "Report",
-            link: "../../../assets/docs/tn/report.pdf"
+            link: "../../../assets/docs/tn/report.pdf",
+            disabled: false
           }
         ],
         skills:[
@@ -105,11 +108,13 @@ export class ExperienceComponent implements OnInit {
         links: [
           {
             display: "Attestation (french)",
-            link: "../../../assets/docs/dotit/attestation.pdf"
+            link: "../../../assets/docs/dotit/attestation.pdf",
+            disabled: false
           },
           {
             display: "Report (french)",
-            link: "../../../assets/docs/dotit/report.pdf"
+            link: "../../../assets/docs/dotit/report.pdf",
+            disabled: false
           }
         ]
       }

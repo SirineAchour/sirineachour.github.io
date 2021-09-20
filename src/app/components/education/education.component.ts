@@ -31,11 +31,13 @@ export class EducationComponent implements OnInit {
         links: [
           {
             display: "Attestations (french)",
-            link: "../../../assets/docs/insat/attestations.pdf"
+            link: "../../../assets/docs/insat/attestations.pdf",
+            disabled: false
           },
           {
             display: "Transcripts (french)",
-            link: "../../../assets/docs/insat/transcripts.pdf"
+            link: "../../../assets/docs/insat/transcripts.pdf",
+            disabled: false
           }
         ]
       },
@@ -48,11 +50,13 @@ export class EducationComponent implements OnInit {
         links: [
           {
             display: "Diploma (english)",
-            link: "../../../assets/diplomas/"
+            link: "../../../assets/diplomas/",
+            disabled: true
           },
           {
             display: "Diploma (french)",
-            link: "../../../assets/diplomas/"
+            link: "../../../assets/diplomas/",
+            disabled: true
           }
         ]
       }
