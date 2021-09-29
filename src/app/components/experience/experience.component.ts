@@ -38,7 +38,7 @@ export class ExperienceComponent implements OnInit {
           {
             display: "Recommendation Letter",
             link: "../../../assets/docs/parcus/rec_letter.pdf",
-            disabled: false
+            disabled: true
           },
         ],
         skills: [
@@ -109,7 +109,7 @@ export class ExperienceComponent implements OnInit {
           {
             display: "Attestation (french)",
             link: "../../../assets/docs/dotit/attestation.pdf",
-            disabled: false
+            disabled: true
           },
           {
             display: "Report (french)",
