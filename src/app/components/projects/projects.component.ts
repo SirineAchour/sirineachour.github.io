@@ -9,6 +9,7 @@ import { MatAccordion } from '@angular/material/expansion';
 export class ProjectsComponent implements OnInit, AfterViewInit {
 
   @ViewChild("accord") accord: MatAccordion
+  @ViewChild("accordp") accordp: MatAccordion
   panelOpenState = true;
 
 
@@ -282,27 +283,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             path: "https://github.com/SirineAchour/SpillTheTea"
           }
         ]
-      },
-      {
-        title: "Robotics",
-        order: 6,
-        real_order: 6,
-        date: "Dec 2019 - Feb 2020",
-        description: "\
-        I worked, with a team of other students, on designing, coding and assembling 2 robots for 2 different competitions. \
-        <br>\
-        We managed to make 2 fully functional robots despite us having limited resources and limited time.\
-        <br>\
-        The robots are : \
-        <br>\
-        <ul>\
-        <li>A rally robot, For Fast and Furious INSAT robotics competition</li>\
-        <li>A rough-road robot, For ENICarthage Robots robotics competition</li>\
-        </ul>\
-        ",
-        skills: [
-          "Arduino", "Assembly", "Design", "Mechanics"
-        ]
       }
     ]
 
@@ -312,9 +292,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         order: 1,
         real_order: 1,
         type: "Web Development",
-        date: "Jun 2021",
+        date: "Sep 2021",
         description: "\
-        This project is a website for recruters to browse through my history, skils, reccomendation letters and reports.\
+        This project is a website for recruters to browse through my history, skills, reccomendation letters and reports.\
         <br>\
         ",
         skills: [
@@ -371,5 +351,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.accord.openAll()
+    this.accordp.openAll()
   }
 }

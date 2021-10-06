@@ -86,7 +86,7 @@ export class ExperienceComponent implements OnInit {
           }
         ],
         skills:[
-          "AWS", "Automation", "Docker", "Documentation", "Express", "MySQL", "NodeJS", "Putty", "Python", "Troubleshooting"
+          "AWS EC2", "Automation", "Docker", "Documentation", "Express", "MySQL", "NodeJS", "Putty", "Python", "Troubleshooting"
         ]
       },
       {
