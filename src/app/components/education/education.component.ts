@@ -19,10 +19,10 @@ export class EducationComponent implements OnInit {
         title: "National Engineering Diploma",
         icon: "laptop",
         content: "\
-        <strong>Major : </strong> Software engineering <br>\
-        <strong>Specialization : </strong> DevOps\
+        <strong>Major : </strong> Software Engineering <br>\
+        <strong>Specialization : </strong> Testing & DevOps\
         <br><br>\
-        This invovled a focus on software design, software architecture, software development, \
+        This invovled a focus on software design, software architecture, software development, optimization \
         IT project management, operating systems, advanced algorithmics, cybersecurity, \
         networks, low level programming, DevOps and Testing.\
         <br>\
@@ -48,15 +48,15 @@ export class EducationComponent implements OnInit {
         icon: "school",
         content: "<strong>Specialization : </strong> Mathematics <br><br>This invloved a focus on mathematics and physics but also biology, human sciences and languages (English, Arabic, French and Spanish).",
         links: [
-          {
+          /*{
             display: "Diploma (english)",
             link: "../../../assets/diplomas/",
             disabled: true
-          },
+          },*/
           {
-            display: "Diploma (french)",
-            link: "../../../assets/diplomas/",
-            disabled: true
+            display: "Diploma (arabic)",
+            link: "../../../assets/docs/diplomas/bac.pdf",
+            disabled: false
           }
         ]
       }

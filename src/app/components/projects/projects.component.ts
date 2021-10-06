@@ -13,6 +13,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
 
 
   projects
+  personal_projects
   constructor() { }
 
   ngOnInit(): void {
@@ -305,6 +306,54 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
       }
     ]
 
+    this.personal_projects = [
+      {
+        title: "Personal Website",
+        order: 1,
+        real_order: 1,
+        type: "Web Development",
+        date: "Jun 2021",
+        description: "\
+        This project is a website for recruters to browse through my history, skils, reccomendation letters and reports.\
+        <br>\
+        ",
+        skills: [
+          "Angular",
+          "Automation",
+          "Github Actions",
+          "Github Pages",
+          "HTML/CSS/JS",
+          "Web design"
+        ],
+        docs: [
+          {
+            name: "GitHub",
+            path: "https://github.com/SirineAchour/sirineachour.github.io"
+          }
+        ]
+      },
+      {
+        title: "Robotics",
+        order: 2,
+        real_order: 2,
+        date: "Dec 2019 - Feb 2020",
+        description: "\
+        I worked, with a team of other students, on designing, coding and assembling 2 robots for 2 different competitions. \
+        <br>\
+        We managed to make 2 fully functional robots despite us having limited resources and limited time.\
+        <br>\
+        The robots are : \
+        <br>\
+        <ul>\
+        <li>A rally robot, For Fast and Furious INSAT robotics competition</li>\
+        <li>A rough-road robot, For ENICarthage Robots robotics competition</li>\
+        </ul>\
+        ",
+        skills: [
+          "Arduino", "Assembly", "Design", "Mechanics"
+        ]
+      }
+    ]
     //this.sort_for_grid()
   }
 
