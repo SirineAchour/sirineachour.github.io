@@ -49,7 +49,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         real_order: 0,
         date: "Jan 2021 - May 2021",
         description: "\
-            This is a single player educational card game that showcases the artwork held at the University of Michigan's library and studies the links between them.\
+            This is a single-player educational card game that showcases the artwork held at the University of Michigan's library and studies the links between them.\
             <br>\
             I worked, within the University of Michigan researchteam, on 2 of the project's 3 main axes:\
             <br><ul>\
