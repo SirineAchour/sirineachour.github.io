@@ -39,7 +39,7 @@ export class SkillsComponent implements OnInit {
       {
         domain:"DevOps",
         skills:[
-          "Cypress", "Docker", "Git", "GitHub Actions", "Kubernetes", "OpenShift", "Puppet", "RabbitMQ","Selenium", "Terraform"
+          "Cypress", "Docker", "Git", "GitHub Actions", "Kubernetes", "OpenShift", "Puppet", "RabbitMQ","Selenium", "Vagrant"
         ]
       },
       {
