@@ -220,7 +220,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
           <li> Nim <a href='https://en.wikipedia.org/wiki/Nim' target='_blank' class='icon link'></a> :\
           <br>\
           <div class='fix-margin'>\
-            This is a mathematical strategy game that requires 2 players to take turns splitting a given heap into uneven part; Thus creating sub heaps thae.\
+            This is a mathematical strategy game that requires 2 players to take turns splitting a given heap into uneven part.\
             <br>\
             I implemented 2 versions of the opposing AI player using the algorithm ''MiniMax''. One version is with pruning; The other is without.\
             </div>\

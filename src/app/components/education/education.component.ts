@@ -19,23 +19,23 @@ export class EducationComponent implements OnInit {
         title: "National Engineering Diploma",
         icon: "laptop",
         content: "\
-        <strong>Major : </strong> Software Engineering <br>\
-        <strong>Specialization : </strong> Testing & DevOps\
+        <strong>Major: </strong> Software Engineering <br>\
+        <strong>Specialization: </strong> Testing & DevOps\
         <br><br>\
-        This invovled a focus on software design, software architecture, software development, optimization \
+        This involved a focus on software design, software architecture, software development, optimization \
         IT project management, operating systems, advanced algorithmics, cybersecurity, \
-        networks, low level programming, DevOps and Testing.\
+        networks, low-level programming, DevOps and Testing.\
         <br>\
-        In addition to computer science courses, I also had advanced mathematics and advanced physics courses during the first two years that constitue the preparatory cycle. \
+        In addition to computer science courses, I also had advanced mathematics and advanced physics courses during the first two years that constitute the preparatory cycle. \
         ",
         links: [
           {
-            display: "Attestations (french)",
+            display: "Attestations (French)",
             link: "../../../assets/docs/insat/attestations.pdf",
             disabled: false
           },
           {
-            display: "Transcripts (french)",
+            display: "Transcripts (French)",
             link: "../../../assets/docs/insat/transcripts.pdf",
             disabled: false
           }
@@ -46,15 +46,15 @@ export class EducationComponent implements OnInit {
         location: "Hammam Susah High School 2",
         title: "Baccalaureate with honors",
         icon: "school",
-        content: "<strong>Specialization : </strong> Mathematics <br><br>This invloved a focus on mathematics and physics but also biology, human sciences and languages (English, Arabic, French and Spanish).",
+        content: "<strong>Specialization: </strong> Mathematics <br><br>This involved a focus on mathematics and physics but also biology, human sciences, and languages (English, Arabic, French, and Spanish).",
         links: [
           /*{
-            display: "Diploma (english)",
+            display: "Diploma (English)",
             link: "../../../assets/diplomas/",
             disabled: true
           },*/
           {
-            display: "Diploma (arabic)",
+            display: "Diploma (Arabic)",
             link: "../../../assets/docs/diplomas/bac.pdf",
             disabled: false
           }

@@ -19,10 +19,10 @@ export class ExperienceComponent implements OnInit {
         title: "DevOps Engineer & Frontend Developer",
         icon: "http",
         content: "\
-        I worked, within a team of frontend and backend developpers, on a website for a company to manage their team, clients and orders.\
+        I worked, within a team of frontend and backend developers, on a website for a company to manage their team, clients, and orders.\
         <br>\
         <br>\
-        My tasks included, but were not limited to :\
+        My tasks included, but were not limited to:\
         <br>\
         - Introducing DevOps practices to a web application.\
         <br>\
@@ -30,7 +30,7 @@ export class ExperienceComponent implements OnInit {
         <br>\
         - Implementing a dynamic form builder from scratch.\
         <br>\
-        - Managing user accounts, roles and access rights.\
+        - Managing user accounts, roles, and access rights.\
         <br>\
        - Designing a user-friendly and functional UI.\
         ",
@@ -52,26 +52,26 @@ export class ExperienceComponent implements OnInit {
         title: "DevOps Engineering Intern",
         icon: "laptop",
         content: "\
-        I worked with a research group in the University of Michigan on updating their Translation Networks site.\
+        I worked with a research group at the University of Michigan on updating their Translation Networks site.\
         <br>\
         This website is a project that was contributed to by a team of art, history, and IT professors as well as librarians and other university students.\
         <br>\
         It provides a collection of digital tools that assist students in connecting ideas, creative activities, and sources.\
         <br>\
         <br>\
-        My contribution was :\
+        My contribution was:\
         <br>\
         - Troubleshooting an AWS server instance.\
         <br>\
-        - Upgrading a web app to the lastest Node version.\
+        - Upgrading a web app to the latest Node version.\
         <br>\
         - Analyzing and evaluating files and database tables (automatically!).<a href='https://github.com/SirineAchour/TN-internship-automation-scripts' target='_blank' class='icon link'></a>\
         <br>\
-        - Studying, comparing and merging<a href='https://github.com/SirineAchour/TN-dev-prod-database-merge-script' target='_blank' class='icon link'></a> development and production code and databases.\
+        - Studying, comparing, and merging<a href='https://github.com/SirineAchour/TN-dev-prod-database-merge-script' target='_blank' class='icon link'></a> development and production code and databases.\
         <br>\
         - Containerizing a web app.\
         <br>\
-        - Providing a thorough documentation of my work and my findings.\
+        - Providing thorough documentation of my work and my findings.\
         ",
         links: [
           {
@@ -99,7 +99,7 @@ export class ExperienceComponent implements OnInit {
         This was my first internship, during which I learned how to navigate in a professional work environment while working on a website for shopping at a multi-location store.\
         <br>\
         <br>\
-        My contribution was : \
+        My contribution was: \
         <br>\
         - Designing and implementing a pop-up for re-routing a new user to the chosen shop.\
         <br>\
@@ -107,12 +107,12 @@ export class ExperienceComponent implements OnInit {
         ",
         links: [
           {
-            display: "Attestation (french)",
+            display: "Attestation (French)",
             link: "../../../assets/docs/dotit/attestation.pdf",
             disabled: false
           },
           {
-            display: "Report (french)",
+            display: "Report (French)",
             link: "../../../assets/docs/dotit/report.pdf",
             disabled: false
           }
