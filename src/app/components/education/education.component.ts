@@ -24,7 +24,7 @@ export class EducationComponent implements OnInit {
         <br><br>\
         This involved a focus on software design, software architecture, software development, optimization \
         IT project management, operating systems, advanced algorithmics, cybersecurity, \
-        networks, low-level programming, DevOps and Testing.\
+        networks, low-level programming, DevOps, and Testing.\
         <br>\
         In addition to computer science courses, I also had advanced mathematics and advanced physics courses during the first two years that constitute the preparatory cycle. \
         ",

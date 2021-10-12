@@ -16,10 +16,10 @@ export class ExperienceComponent implements OnInit {
         date: "Apr 2021 - Present",
         location: "Parcus Digital Solutions",
         location_link: "https://parcus.fr/",
-        title: "DevOps Engineer & Frontend Developer",
+        title: "DevOps Engineer & Front-end Developer",
         icon: "http",
         content: "\
-        I worked, within a team of frontend and backend developers, on a website for a company to manage their team, clients, and orders.\
+        I worked, within a team of front-end and back-end developers, on a website for a company to manage their team, clients, and orders.\
         <br>\
         <br>\
         My tasks included, but were not limited to:\

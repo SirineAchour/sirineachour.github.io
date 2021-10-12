@@ -49,12 +49,12 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         real_order: 0,
         date: "Jan 2021 - May 2021",
         description: "\
-            This is a single player educational card game that showcases the art work held at the University of Michigan's library and studies the links between them.\
+            This is a single player educational card game that showcases the artwork held at the University of Michigan's library and studies the links between them.\
             <br>\
-            I worked, within the University of Michigan researchteam, on 2 of the project's 3 main axis:\
+            I worked, within the University of Michigan researchteam, on 2 of the project's 3 main axes:\
             <br><ul>\
-            <li>Frontend : This is the game design and implementation part done using Unity.</li>\
-            <li>Backend : This part involved the design and implementation of not only a MySQL database but also a RESTful API.</li>\
+            <li>Front-end: This is the game design and implementation part done using Unity.</li>\
+            <li>Back-end: This part involved the design and implementation of not only a MySQL database but also a RESTful API.</li>\
             </ul>\
         ",
         skills: [
@@ -86,7 +86,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         real_order: 1,
         date: "Apr 2021",
         description: "\
-          I develpoped the user interface of a sales desktop application using JavaFX.\
+          I developed the user interface of a sales desktop application using JavaFX.\
           <br>\
           This application is that of an interactive terminal installed in shopping malls which allows shoppers\
           to take advantage of several offers and promotions proposed by different categories of shops.\
@@ -125,11 +125,11 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ],
         docs: [
           {
-            name: "Frontend",
+            name: "Front-end",
             path: "https://github.com/SirineAchour/GestionPFEFront"
           },
           {
-            name: "Backend",
+            name: "Back-end",
             path: "https://github.com/SirineAchour/GestionPFEBack"
           }
         ]
@@ -142,14 +142,14 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         description: "\
         A console app that offers a collection of cryptography tools.\
         <br>\
-        These tools include :\
+        These tools include:\
         <br><ul>\
         <li>Hashing</li>\
         <li>Encoding </li>\
         <li>Symmetric encryption/decryption</li>\
         <li>Key generation</li>\
         <li>Asymmetric encryption/decryption (RSA/ECIES)</li>\
-        <li>Cracking hashes: brute-force, dictionnary attack, simple brute force</li>\
+        <li>Cracking hashes: brute-force, dictionary attack, simple brute force</li>\
         </ul>\
         \
         ",
@@ -192,7 +192,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         type: "Web Development",
         date: "Mar 2020 - Jul 2020",
         description: "\
-        I worked on the frontend of a website for people providing and looking for odd jobs.\
+        I worked on the front-end of a website for people providing and looking for odd jobs.\
         ",
         skills: [
           "HTML/CSS/JS",
@@ -207,25 +207,25 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ]
       },
       {
-        title: "Implementating popular AI algorithms",
+        title: "Implementing popular AI algorithms",
         order: 3,
         real_order: 4,
         date: "Nov 2020 - Jan 2021",
         description: "\
-        For learing purposes, I created 2 console games that implement popular AI algorithms.\
+        For learning purposes, I created 2 console games that implement popular AI algorithms.\
         <br>\
-        The games are : \
+        The games are: \
         <br>\
         <ul>\
-          <li> Nim <a href='https://en.wikipedia.org/wiki/Nim' target='_blank' class='icon link'></a> :\
+          <li> Nim <a href='https://en.wikipedia.org/wiki/Nim' target='_blank' class='icon link'></a>:\
           <br>\
           <div class='fix-margin'>\
-            This is a mathematical strategy game that requires 2 players to take turns splitting a given heap into uneven part.\
+            This is a mathematical strategy game that requires 2 players to take turns splitting a given heap into uneven parts.\
             <br>\
             I implemented 2 versions of the opposing AI player using the algorithm ''MiniMax''. One version is with pruning; The other is without.\
             </div>\
           </li>\
-          <li> Sliding Puzzle <a href='https://en.wikipedia.org/wiki/Sliding_puzzle' target='_blank' class='icon link'></a> : \
+          <li> Sliding Puzzle <a href='https://en.wikipedia.org/wiki/Sliding_puzzle' target='_blank' class='icon link'></a>: \
           <div class='fix-margin'>\
             The basis of this game is simple: \
             <br>\
@@ -233,7 +233,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             <br>\
              At each turn, the player slides a piece of their choosing to the empty slot.  \
              <br>\
-             The goal is to sort these numbers in an ascending order.\
+             The goal is to sort these numbers in ascending order.\
             <br>\
             I implemented the ''A*'' algorithm in order to solve (if possible) any random sliding puzzle of any size. \
             </div>\
@@ -294,7 +294,7 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         type: "Web Development",
         date: "Sep 2021",
         description: "\
-        This project is a website for recruters to browse through my history, skills, reccomendation letters and reports.\
+        This project is a website for recruiters to browse through my history, skills, recommendation letters, and reports.\
         <br>\
         ",
         skills: [
@@ -318,11 +318,11 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         real_order: 2,
         date: "Dec 2019 - Feb 2020",
         description: "\
-        I worked, with a team of other students, on designing, coding and assembling 2 robots for 2 different competitions. \
+        I worked, with a team of other students, on designing, coding, and assembling 2 robots for 2 different competitions. \
         <br>\
         We managed to make 2 fully functional robots despite us having limited resources and limited time.\
         <br>\
-        The robots are : \
+        The robots are: \
         <br>\
         <ul>\
         <li>A rally robot, For Fast and Furious INSAT robotics competition</li>\
