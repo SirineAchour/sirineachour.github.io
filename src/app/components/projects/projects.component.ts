@@ -71,6 +71,10 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ],
         docs: [
           {
+            name:"Demo",
+            path: "https://drive.google.com/file/d/1SFPqN_T1FwcEUnUYimGvy-J2B5BskFzb/view?usp=sharing"
+          },
+          {
             name: "Attestation",
             path: "../../../assets/docs/collect-connect/attestation.pdf"
           },
@@ -78,6 +82,18 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             name: "Report",
             path: "../../../assets/docs/collect-connect/report.pdf"
           },
+        ],
+        screens:[
+          '../../../assets/screenshots/academic-8/1.png', 
+          '../../../assets/screenshots/academic-8/2.png', 
+          '../../../assets/screenshots/academic-8/3.png', 
+          '../../../assets/screenshots/academic-8/4.png', 
+          '../../../assets/screenshots/academic-8/5.png', 
+          '../../../assets/screenshots/academic-8/6.png', 
+          '../../../assets/screenshots/academic-8/7.png', 
+          '../../../assets/screenshots/academic-8/8.png', 
+          '../../../assets/screenshots/academic-8/9.png', 
+          '../../../assets/screenshots/academic-8/10.png', 
         ]
       },
       {
@@ -103,6 +119,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             name: "Github",
             path: "https://github.com/SirineAchour/Sale-Sale-Sale"
           }
+        ],
+        screens:[
+          '../../../assets/screenshots/academic-7/1.png',
+          '../../../assets/screenshots/academic-7/2.png',
+          '../../../assets/screenshots/academic-7/3.png',
+          '../../../assets/screenshots/academic-7/4.png',
+          '../../../assets/screenshots/academic-7/5.png',          
         ]
       },
       {
@@ -183,6 +206,9 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
                   name: "GitHub",
                   path: "https://github.com/SirineAchour/GPGTrustWebGraph"
                 }
+              ],
+              screens:[
+                '../../../assets/screenshots/academic-4/1.png',
               ]
             },
       {
@@ -201,9 +227,21 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ],
         docs: [
           {
+            name:"Demo",
+            path: "https://drive.google.com/drive/folders/11vgoot3L4mHqJiycYjlJkw7CCgUQukp8?usp=sharing"
+          },
+          {
             name: "GitHub",
             path: "https://github.com/SirineAchour/TaskMeFront"
           }
+        ],
+        screens:[
+          '../../../assets/screenshots/academic-3/1.png',
+          '../../../assets/screenshots/academic-3/2.png',       
+          '../../../assets/screenshots/academic-3/3.png',       
+          '../../../assets/screenshots/academic-3/4.png',      
+          '../../../assets/screenshots/academic-3/5.png',      
+          '../../../assets/screenshots/academic-3/6.png',      
         ]
       },
       {
@@ -249,6 +287,14 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ],
         docs: [
           {
+            name: "Demo (Nim)",
+            path: "https://drive.google.com/file/d/15vQpnGB5wOCKmbGpPH6UONJhrWIXJs0g/view?usp=sharing"
+          },
+          {
+            name:"Demo (Sliding puzzle)",
+            path: "https://drive.google.com/file/d/1u2rVt7_Bw9-txw1K3taBc1NK5jC3ADW1/view?usp=sharing"
+          },
+          {
             name: "Nim",
             path: "https://github.com/SirineAchour/Nim"
           },
@@ -256,6 +302,10 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             name: "Sliding puzzle",
             path: "https://github.com/SirineAchour/Taquin8"
           }
+        ],
+        screens:[
+          '../../../assets/screenshots/academic-2/1.png',
+          '../../../assets/screenshots/academic-2/2.png',       
         ]
       },
       {
@@ -279,9 +329,19 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ],
         docs: [
           {
+            name:"Demo",
+            path: "https://drive.google.com/file/d/1f0S1-sRfce1jaFaVUpMrzqpidtRGaHXU/view?usp=sharing"
+          },
+          {
             name: "GitHub",
             path: "https://github.com/SirineAchour/SpillTheTea"
           }
+        ],
+        screens:[
+          '../../../assets/screenshots/academic-1/1.png',
+          '../../../assets/screenshots/academic-1/2.png',       
+          '../../../assets/screenshots/academic-1/3.png',       
+          '../../../assets/screenshots/academic-1/4.png',      
         ]
       }
     ]
@@ -310,6 +370,10 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             name: "GitHub",
             path: "https://github.com/SirineAchour/sirineachour.github.io"
           }
+        ],
+        screens:[
+          '../../../assets/screenshots/personal-1/1.png',
+          '../../../assets/screenshots/personal-1/2.png'
         ]
       },
       {
@@ -331,6 +395,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ",
         skills: [
           "Arduino", "Assembly", "Design", "Mechanics"
+        ],
+        screens:[
+          '../../../assets/screenshots/personal-2/1.jpeg',
+          '../../../assets/screenshots/personal-2/2.jpeg',
+          '../../../assets/screenshots/personal-2/3.jpeg',
+          '../../../assets/screenshots/personal-2/4.jpeg',
+          '../../../assets/screenshots/personal-2/5.jpeg'
         ]
       }
     ]

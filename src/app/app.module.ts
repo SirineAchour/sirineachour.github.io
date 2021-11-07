@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon'
 import { MatToolbarModule } from '@angular/material/toolbar'
 import { MatDividerModule } from '@angular/material/divider'
 import { MatSidenavModule } from '@angular/material/sidenav'
+import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button'
 import { FlexLayoutModule, FlexModule } from '@angular/flex-layout'
 import { MatExpansionModule } from '@angular/material/expansion'
@@ -27,7 +28,9 @@ import { CertificatesComponent } from './components/certificates/certificates.co
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { InterestsComponent } from './components/interests/interests.component'
+import { InterestsComponent } from './components/interests/interests.component';
+import { ProjectPreviewComponent } from './components/project-preview/project-preview.component';
+import { ImagePreviewDialogComponent } from './components/image-preview-dialog/image-preview-dialog.component'
 
 @NgModule({
   declarations: [
@@ -40,7 +43,9 @@ import { InterestsComponent } from './components/interests/interests.component'
     SkillsComponent,
     ProjectsComponent,
     ContactComponent,
-    InterestsComponent
+    InterestsComponent,
+    ProjectPreviewComponent,
+    ImagePreviewDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -62,7 +67,8 @@ import { InterestsComponent } from './components/interests/interests.component'
     MatListModule,
     MatExpansionModule,
     MatChipsModule,
-    RouterModule
+    RouterModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

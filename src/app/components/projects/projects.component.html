@@ -33,6 +33,8 @@
             </span>
           </span>
           <br>
+          <app-project-preview *ngIf="project.screens" [screenshots]="project.screens"></app-project-preview>
+          <br>
           <br>
           <span *ngFor="let doc of project.docs">
             <a mat-flat-button [href]="doc.path" target="_blank" color="primary" class="buttons">{{doc.name}}</a>
@@ -76,6 +78,8 @@
               </mat-chip-list>
             </span>
           </span>
+          <br>
+          <app-project-preview *ngIf="project.screens" [screenshots]="project.screens"></app-project-preview>
           <br>
           <br>
           <span *ngFor="let doc of project.docs">
