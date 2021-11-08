@@ -20,4 +20,16 @@
 
 ::ng-deep .mat-dialog-container{
     padding: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+
+.nav-btn{
+    margin: 10px;
+}
+
+mat-icon{
+    position: relative;
+    bottom: 5px;
 }

@@ -155,6 +155,12 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             name: "Back-end",
             path: "https://github.com/SirineAchour/GestionPFEBack"
           }
+        ],
+        screens:[
+          '../../../assets/screenshots/academic-6/1.png',
+          '../../../assets/screenshots/academic-6/2.png',       
+          '../../../assets/screenshots/academic-6/3.png',       
+          '../../../assets/screenshots/academic-6/4.png',       
         ]
       },
       {

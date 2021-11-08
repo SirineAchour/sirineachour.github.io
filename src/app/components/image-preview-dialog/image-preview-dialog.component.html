@@ -1,15 +1,21 @@
-<img [src]="data.images[index]" alt="screenshot of project" class="preview" height="485" >
-
-
-
-<div  *ngIf="index!=final"  >
-<button mat-fab class="browse right" color="basic" (click)="right()"  fxShow="false" fxShow.gt-sm>
-    <mat-icon>keyboard_arrow_right</mat-icon>
-</button>
-</div>
-
-<div *ngIf="index!=0">
-    <button mat-fab  class="browse left" color="basic" (click)="left()"  fxShow="false" fxShow.gt-sm>
-        <mat-icon>keyboard_arrow_left</mat-icon>
+<div fxLayout="row" fxLayoutAlign="space-between center">
+  <div *ngIf="index != 0" fxFlex="9">
+    <button mat-flat-button (click)="left()">
+      <mat-icon>keyboard_arrow_left</mat-icon>
     </button>
-    </div>
+  </div>
+  <img
+
+  fxFlex="80"
+    mat-dialog-content
+    [src]="data.images[index]"
+    alt="screenshot of project"
+    class="preview"
+    height="485"
+  />
+  <div *ngIf="index != final" fxFlex="9">
+    <button mat-flat-button (click)="right()">
+      <mat-icon>keyboard_arrow_right</mat-icon>
+    </button>
+  </div>
+</div>

@@ -1,9 +1,10 @@
 .preview:hover{
     cursor: pointer;
-    border: purple solid 1px;
+    border: purple solid 2px;
 }
 
-.preview {
+.preview{
+    border: purple solid 1px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
