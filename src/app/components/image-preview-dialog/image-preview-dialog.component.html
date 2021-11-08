@@ -1,23 +1,18 @@
 <div fxLayout="row" fxLayoutAlign="space-between center">
-  <div *ngIf="index != 0" fxFlex="9">
-    <button mat-flat-button (click)="left()">
-      <mat-icon>keyboard_arrow_left</mat-icon>
-    </button>
-  </div>
+  <button mat-flat-button (click)="left()" *ngIf="index != 0" fxFlex="4">
+    <mat-icon>keyboard_arrow_left</mat-icon>
+  </button>
 
-<div fxFlex="80"  fxLayout="row" fxLayoutAlign="center center" >
-  <img
-  mat-dialog-content
-    [src]="data.images[index]"
-    alt="screenshot of project"
-    class="preview"
-    height="60%"
-  />
-
-</div>
-  <div *ngIf="index != final" fxFlex="9">
-    <button mat-flat-button (click)="right()">
-      <mat-icon>keyboard_arrow_right</mat-icon>
-    </button>
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <img
+      mat-dialog-content
+      [src]="data.images[index]"
+      alt="screenshot of project"
+      class="preview"
+      height="60%"
+    />
   </div>
+  <button mat-flat-button (click)="right()" fxFlex="4" *ngIf="index != final">
+    <mat-icon>keyboard_arrow_right</mat-icon>
+  </button>
 </div>
