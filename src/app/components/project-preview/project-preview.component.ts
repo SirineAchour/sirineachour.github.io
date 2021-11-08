@@ -17,7 +17,7 @@ export class ProjectPreviewComponent implements OnInit {
   open(items, index) {
     const dialogRef = this.dialog.open(ImagePreviewDialogComponent, {
       width: '100%',
-      height: 'auto',
+      //height: 'auto',
       data: {
         images: items,
         index: index,

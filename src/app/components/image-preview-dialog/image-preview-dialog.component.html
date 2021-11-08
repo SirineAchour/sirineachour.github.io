@@ -4,15 +4,17 @@
       <mat-icon>keyboard_arrow_left</mat-icon>
     </button>
   </div>
-  <img
 
-  fxFlex="80"
-    mat-dialog-content
+<div fxFlex="80"  fxLayout="row" fxLayoutAlign="center center" >
+  <img
+  mat-dialog-content
     [src]="data.images[index]"
     alt="screenshot of project"
     class="preview"
     height="485"
   />
+
+</div>
   <div *ngIf="index != final" fxFlex="9">
     <button mat-flat-button (click)="right()">
       <mat-icon>keyboard_arrow_right</mat-icon>
