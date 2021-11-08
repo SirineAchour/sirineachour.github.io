@@ -107,6 +107,17 @@ background-size: 100% 70%;
 bottom: 0;
 right: 0;
 margin: 20px !important;
+//box-shadow: none !important;
+//border: #959cff 1px solid;
+
+background: #f6f7ff !important;
+box-shadow:  5px 5px 9px #d6d7de,
+             -5px -5px 9px #ffffff !important;
+}
+
+.up mat-icon {
+  position: relative;
+  bottom: 3px;
 }
 
 .line{
