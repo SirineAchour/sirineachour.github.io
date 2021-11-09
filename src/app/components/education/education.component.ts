@@ -44,7 +44,7 @@ export class EducationComponent implements OnInit {
       {
         date: "2013 - 2017",
         location: "Hammam Susah High School 2",
-        title: "Baccalaureate with honors",
+        title: "Highschool Diploma with honors",
         icon: "school",
         content: "<strong>Specialization: </strong> Mathematics <br><br>This involved a focus on mathematics and physics but also biology, human sciences, and languages (English, Arabic, French, and Spanish).",
         links: [

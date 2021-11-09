@@ -21,7 +21,7 @@ export class SkillsComponent implements OnInit {
       {
         domain: "Software Engineering",
         skills: [
-          "Advanced Algorithmics", "Data Structures", "Design Patterns", "Distributed Systems", "Documentation", "Serverless Applications", "Test Driven Development", "UML"
+          "Advanced Algorithmics", "Complexity of Algorithms", "Data Structures", "Design Patterns", "Distributed Systems", "Documentation", "Testing", "UML"
         ]
       },
       {
@@ -39,7 +39,7 @@ export class SkillsComponent implements OnInit {
       {
         domain:"DevOps",
         skills:[
-          "Cypress", "Docker", "Git", "GitHub Actions", "Kubernetes", "OpenShift", "Puppet", "RabbitMQ","Selenium", "Vagrant"
+          "Cypress", "Docker","Docker Swarm", "Git", "GitHub Actions", /*"Kubernetes", "OpenShift",*/ "Puppet", "RabbitMQ","Selenium", "Serverless", "Vagrant"
         ]
       },
       {
