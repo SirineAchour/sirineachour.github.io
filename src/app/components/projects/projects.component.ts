@@ -35,11 +35,11 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         docs: [
           {
             name: "Client",
-            path: "https://github.com/SirineAchour/GestionPFEFront"
+            path: "https://github.com/SirineAchour/SecureChatroomClient"
           },
           {
             name: "Server",
-            path: "https://github.com/SirineAchour/GestionPFEBack"
+            path: "https://github.com/SirineAchour/SecureChatroomServer"
           }
         ]
       },
