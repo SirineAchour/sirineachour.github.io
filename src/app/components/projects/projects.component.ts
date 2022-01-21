@@ -67,7 +67,10 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
             path: "https://www.npmjs.com/package/ngx-mat-form-builder"
           }
         ],
-        screens:[       
+        screens:[     
+          '../../../assets/screenshots/academic-10/1.png',
+          '../../../assets/screenshots/academic-10/2.png',
+          '../../../assets/screenshots/academic-10/3.png',    
         ]
       },
       {
