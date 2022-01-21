@@ -13,7 +13,21 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
     this.events = [
       {
-        date: "Apr 2021 - Present",
+        date: "February 2022 - July 2022",
+        location: "Realities",
+        location_link: "https://www.realities.io/",
+        title: "Software Engineering Intern",
+        icon: "laptop",
+        content: "\
+        - CI/CD pipeline implementation for unreal engine \
+        <br>\
+        - Database design and implementation\
+        ",
+        links: [],
+        skills: []
+      },
+      {
+        date: "Apr 2021 - Sep 2021",
         location: "Parcus Digital Solutions",
         location_link: "https://parcus.fr/",
         title: "DevOps Engineer & Front-end Developer",

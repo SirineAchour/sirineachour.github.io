@@ -31,15 +31,15 @@ export class SkillsComponent implements OnInit {
         ]
       },
       {
-        domain: "Web Development",
+        domain:"DevOps",
         skills:[
-          "Angular", "CSS", "Express", "HTML","NestJS", "Prestashop", "SCSS", "Symfony", "Vue.js", ".Net Core"
+          "Azure", "Cypress", "Docker","Docker Swarm", "FluxCD", "Git", "GitHub Actions", "Helm", "Istio", "Kiali", "Kustomize", "Kubernetes", /*"OpenShift",*/ "Puppet", "RabbitMQ","Selenium", "Serverless Functions", "Vagrant"
         ]
       },
       {
-        domain:"DevOps",
+        domain: "Web Development",
         skills:[
-          "Cypress", "Docker","Docker Swarm", "Git", "GitHub Actions", /*"Kubernetes", "OpenShift",*/ "Puppet", "RabbitMQ","Selenium", "Serverless", "Vagrant"
+          "Angular", "CSS", "Express", "HTML","NestJS", "Prestashop", "SCSS", "Symfony", "Vue.js", ".Net Core"
         ]
       },
       {
@@ -51,7 +51,7 @@ export class SkillsComponent implements OnInit {
       {
         domain: "Other",
         skills:[
-          "Arduino", "Matlab", "STM32", "Talend", "Unity"
+          "Arduino", "Matlab", "PowerBI", "STM32", "Talend", "Unity"
         ]
       }
     ]

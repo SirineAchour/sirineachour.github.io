@@ -20,6 +20,57 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   ngOnInit(): void {
     this.projects = [
       {
+        title: "Infrastructure As Code For A Django Application",
+        order: 4,
+        real_order: 1,
+        date: "Jan 2022",
+        description: "\
+        A GitHub repository for continuous deployment of a library application to a kubernetes cluster. \
+        <br> \
+        <br> \
+        This infrastructure not only contained the application at hand but also had metrics visualization, service mesh management, and 2 environments (development & production). \
+        ",
+        skills: [
+          "Azure Kubernetes Service", "Docker", "FluxCD", "Grafana", "Git", "GitHub", "GitOps", "Helm", "Ingress-Nginx", "Istio", "Kiali", "Kustomize", "Kubernetes", "Prometheus"
+        ],
+        docs: [
+          {
+            name: "GitHub",
+            path: "https://github.com/SirineAchour/library-infrastructure"
+          }
+        ],
+        screens:[
+          '../../../assets/screenshots/academic-9/1.png',
+          '../../../assets/screenshots/academic-9/2.png',
+          '../../../assets/screenshots/academic-9/3.png',
+          '../../../assets/screenshots/academic-9/4.png',
+          '../../../assets/screenshots/academic-9/5.png',    
+        ]
+      },
+      {
+        title: "Dynamic Form Builder",
+        order: 4,
+        real_order: 1,
+        date: "Nov 2021 - Present",
+        description: "\
+        ",
+        skills: [
+          "Angular", "Git", "GitHub Actions", "Open Source", "Web Design"
+        ],
+        docs: [
+          {
+            name: "GitHub",
+            path: "https://github.com/SirineAchour/dynamic-form-builder"
+          },
+          {
+            name: "Package",
+            path: "https://www.npmjs.com/package/ngx-mat-form-builder"
+          }
+        ],
+        screens:[       
+        ]
+      },
+      {
         title: "Super Secure Chatroom",
         order: 4,
         real_order: 1,

@@ -106,16 +106,17 @@ body {
 .mat-fab.mat-primary,
 .mat-mini-fab.mat-primary {
   background-color: //#234dd0 !important;
-  #234dd0cc !important;
+  //#234dd0cc !important;
+  #1e8401cc !important;
 }
 .mat-flat-button.mat-accent,
 .mat-raised-button.mat-accent,
 .mat-fab.mat-accent,
 .mat-mini-fab.mat-accent {
-  //background-color: #c3ff40 !important;
+  background-color: #898a93 !important;
   //background-color: #FC9E1D !important;
   //color: white !important;
-  background-color: #959cff !important;
+  //background-color: #959cff !important;
   color: white !important;
 }
 .mat-button.mat-primary,
@@ -154,10 +155,10 @@ border-radius: 5px;*/
 
 ::-moz-selection { /* Code for Firefox */
   color: white;
-  background: purple;
+  background: #2f4858;
 }
 
 ::selection {
   color: white;
-  background: purple;
+  background: #2f4858;
 }

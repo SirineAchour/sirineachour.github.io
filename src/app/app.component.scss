@@ -82,12 +82,14 @@ background-color: #f6f7ffff;
 .content{
   //background-image: url('../assets/backgrounds/4.jpg');
   // 21 25 26
-  background-image: url('../assets/backgrounds/32.jpg');
+  //background-image: url('../assets/backgrounds/33.jpg');
+  background-image: url('../assets/backgrounds/33.jpg');
+  background-color: #223cc82b;
   //background-repeat: repeat-x;
   background-attachment: fixed;
 //background-size: 100% 100%;
 background-repeat: repeat-x;
-background-size: 100% 70%;
+background-size: 100% 100%;
 }
 
 .name{
@@ -127,12 +129,12 @@ box-shadow:  5px 5px 9px #d6d7de,
 }
 
 .center-smaller{
-  width: 85%;
+  width: 90%;
   align-self: center;
 }
 
 mat-toolbar{
-  width: 85% !important;
+  width: 90% !important;
 }
 
 .mat-drawer{

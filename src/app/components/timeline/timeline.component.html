@@ -29,7 +29,7 @@
         <span *ngIf="event.skills">
           <br>
           <span>
-            <mat-chip-list >
+            <mat-chip-list *ngIf="event.skills.length != 0">
               Applied skills: &nbsp;
               <mat-chip  *ngFor="let skill of event.skills" color="accent"  selected>{{skill}}</mat-chip>
             </mat-chip-list>
