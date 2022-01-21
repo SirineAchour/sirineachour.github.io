@@ -1,40 +1,40 @@
 .tool {
-    width: 95%;
-    align-self: center;
-    height: 60px;
+  width: 95%;
+  align-self: center;
+  height: 60px;
 }
 
 ::ng-deep .mat-tab-link {
-    min-width: 0px !important;
-    width: auto !important;
-    height: 60px !important;
+  min-width: 0px !important;
+  width: auto !important;
+  height: 60px !important;
 }
 
-.side-element{
+.side-element {
   width: 200px;
 }
 
-.side-element a{
+.side-element a {
   height: 50px;
   align-items: center !important;
 }
 
-::ng-deep mat-drawer-content{
+::ng-deep mat-drawer-content {
   display: contents !important;
 }
 
-::ng-deep mat-drawer{
+::ng-deep mat-drawer {
   position: fixed !important;
 }
 
-::ng-deep mat-toolbar{
+::ng-deep mat-toolbar {
   position: fixed;
   top: 10px;
 }
 
 .header-image {
   //background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
-  background-image: url('../assets/img/me.jpg');
+  background-image: url("../assets/img/me.jpg");
   background-size: cover;
   height: 100px;
   width: 100px;
@@ -43,78 +43,77 @@
   margin-top: 30px;
 }
 
-.header-name{
+.header-name {
   align-self: center;
   margin-top: 10px;
 }
 
-.fix-right{
+.fix-right {
   margin-right: 15px;
 }
 
-.menu-icon{
+.menu-icon {
   margin-bottom: 20px;
 }
 
-.header-links{
+.header-links {
   align-self: center;
 }
 
-.content{
-display: inline;
-/*background: rgb(253,45,84);
+.content {
+  display: inline;
+  /*background: rgb(253,45,84);
 background: linear-gradient(0deg, rgba(45,253,65, 0.034) 0%, rgba(34, 101, 195, 0.034) 63%);*/
 
-//background-color: white; //rgba(34, 117, 195, 0.089);/*
-//background: rgba(34,118,195,0.06484592127866773);
-background-color: #f6f7ffff;
+  //background-color: white; //rgba(34, 117, 195, 0.089);/*
+  //background: rgba(34,118,195,0.06484592127866773);
+  background-color: #f6f7ffff;
 
-//background: rgb(0,218,21);
-//background: linear-gradient(0deg, rgba(0,218,21,0.07605040307138478) 0%, rgba(34,118,195,0.06484592127866773) 63%);
+  //background: rgb(0,218,21);
+  //background: linear-gradient(0deg, rgba(0,218,21,0.07605040307138478) 0%, rgba(34,118,195,0.06484592127866773) 63%);
 
-//background: linear-gradient(0deg, rgba(0,218,21,0.0289915795419731) 0%, rgba(34,118,195,0.1264705711386117) 63%);*/
+  //background: linear-gradient(0deg, rgba(0,218,21,0.0289915795419731) 0%, rgba(34,118,195,0.1264705711386117) 63%);*/
 }
 
-.scroll{
+.scroll {
   padding-top: 65px;
 }
 
-.content{
+.content {
   //background-image: url('../assets/backgrounds/4.jpg');
   // 21 25 26
   //background-image: url('../assets/backgrounds/33.jpg');
-  background-image: url('../assets/backgrounds/33.jpg');
+  background-image: url("../assets/backgrounds/33.jpg");
   background-color: #223cc82b;
   //background-repeat: repeat-x;
   background-attachment: fixed;
-//background-size: 100% 100%;
-background-repeat: repeat-x;
-background-size: 100% 100%;
+  //background-size: 100% 100%;
+  background-repeat: repeat-x;
+  background-size: 100% 100%;
 }
 
-.name{
+.name {
   margin-left: 20px;
 }
 
-::ng-deep mat-icon.l-icon{
+::ng-deep mat-icon.l-icon {
   vertical-align: baseline !important;
 }
 
-::ng-deep mat-icon.ll-icon{
+::ng-deep mat-icon.ll-icon {
   vertical-align: text-bottom !important;
 }
 
-.up{
+.up {
   position: fixed;
-bottom: 0;
-right: 0;
-margin: 20px !important;
-//box-shadow: none !important;
-//border: #959cff 1px solid;
+  bottom: 0;
+  right: 0;
+  margin: 20px !important;
+  //box-shadow: none !important;
+  //border: #959cff 1px solid;
 
-background: #f6f7ff !important;
-box-shadow:  5px 5px 9px #d6d7de,
-             -5px -5px 9px #ffffff !important;
+  background: transparent !important;
+  border: 1px solid white;
 }
 
 .up mat-icon {
@@ -122,22 +121,22 @@ box-shadow:  5px 5px 9px #d6d7de,
   bottom: 3px;
 }
 
-.line{
+.line {
   display: inherit;
   border-top: 1px black solid;
   width: 100px;
 }
 
-.center-smaller{
+.center-smaller {
   width: 90%;
   align-self: center;
 }
 
-mat-toolbar{
+mat-toolbar {
   width: 90% !important;
 }
 
-.mat-drawer{
+.mat-drawer {
   height: 100% !important;
 }
 
@@ -146,7 +145,7 @@ a:hover {
   opacity: 1;
 }
 
-.top-space{
+.top-space {
   height: 10px;
   width: 100%;
   background: inherit !important;
