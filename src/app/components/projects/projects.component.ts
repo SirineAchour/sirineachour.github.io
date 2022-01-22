@@ -48,32 +48,6 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
         ]
       },
       {
-        title: "Dynamic Form Builder",
-        order: 4,
-        real_order: 1,
-        date: "Nov 2021 - Present",
-        description: "\
-        ",
-        skills: [
-          "Angular", "Git", "GitHub Actions", "Open Source", "Web Design"
-        ],
-        docs: [
-          {
-            name: "GitHub",
-            path: "https://github.com/SirineAchour/dynamic-form-builder"
-          },
-          {
-            name: "Package",
-            path: "https://www.npmjs.com/package/ngx-mat-form-builder"
-          }
-        ],
-        screens:[     
-          '../../../assets/screenshots/academic-10/1.png',
-          '../../../assets/screenshots/academic-10/2.png',
-          '../../../assets/screenshots/academic-10/3.png',    
-        ]
-      },
-      {
         title: "Super Secure Chatroom",
         order: 4,
         real_order: 1,
