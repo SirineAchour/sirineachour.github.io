@@ -9,8 +9,7 @@ export class SkillsComponent implements OnInit {
 
   tech_skills
   availableColors = [
-    { name: 'none', color: undefined },
-    { name: 'Primary', color: 'primary' },
+    { name: 'none', color: undefined },     { name: 'Primary', color: 'primary' },
     { name: 'Accent', color: 'accent' },
     { name: 'Warn', color: 'warn' }
   ];
