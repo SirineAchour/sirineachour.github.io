@@ -27,13 +27,13 @@ export class SkillsComponent implements OnInit {
       {
         domain: "Programming Languages",
         skills: [
-          "Bash", "C/C++", "C#", "Java","Javascript", "PHP", "Python","Typescript"
+          "Bash", "Batch", "C/C++", "C#", "Java","Javascript", "PowerShell", "PHP", "Python","Typescript"
         ]
       },
       {
         domain:"DevOps",
         skills:[
-          "Azure", "Cypress", "Docker","Docker Swarm", "FluxCD", "Git", "GitHub Actions", "Helm", "Istio", "Kiali", "Kustomize", "Kubernetes", /*"OpenShift",*/ "Puppet", "RabbitMQ","Selenium", "Serverless Functions", "Vagrant"
+          "Azure", "Azure Pipelines", "Cypress", "Docker","Docker Swarm", "FluxCD", "Git", "GitHub Actions", "Helm", "Hyper V", "Istio", "Kiali", "Kustomize", "Kubernetes", /*"OpenShift",*/ "Puppet", "RabbitMQ","Selenium", "Serverless Functions", "Vagrant", "Windows Containers"
         ]
       },
       {
