@@ -7,7 +7,8 @@
     "build": "ng build --prod --output-path docs",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "requiredupdate": "ng update @angular/compiler-cli --force"
   },
   "private": true,
   "dependencies": {

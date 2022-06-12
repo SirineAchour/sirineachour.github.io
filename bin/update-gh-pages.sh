@@ -29,6 +29,8 @@ git branch
 echo "about to npm i"
 npm i
 npm audit fix
+echo "npm update"
+npm run requiredupdate
 echo "about to run build"
 npm run build
 echo "done building"
