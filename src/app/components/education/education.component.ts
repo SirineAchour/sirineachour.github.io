@@ -7,13 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  events
+  events:any
   constructor() { }
 
   ngOnInit(): void {
     this.events = [
       {
-        date: "2017 - Present",
+        date: "2017 - 2022",
         location: "National Institute of Applied Sciences and Technology",
         location_link: "http://www.insat.rnu.tn/",
         title: "National Engineering Diploma",

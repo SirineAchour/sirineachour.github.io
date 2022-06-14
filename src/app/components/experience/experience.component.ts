@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  events
+  events:any
   constructor() { }
 
   ngOnInit(): void {
@@ -19,12 +19,14 @@ export class ExperienceComponent implements OnInit {
         title: "Software Engineering Intern",
         icon: "laptop",
         content: "\
-        - CI/CD pipeline implementation for unreal engine \
+        I took up this internship with Realities.io as part of my university studies, during which, I introduced DevOps practices to the team's development workflow and developed an efficient and pertinent synchronization tool. \
+        My tasks were mainly: \
+        - Designing, setting up and implementing CI/CD pipelines a cross-platform Unreal Engine project. \
         <br>\
-        - Database design and implementation\
+        - Designing and developing a tool for synchronizing large remote and local assets using git-like operations.\
         ",
         links: [],
-        skills: []
+        skills: [ "Azure DevOps" ,"Docker", "Documentation", "Hyper-V", "Oculus Quest", "Playstation", "PowerShell", "Python", "Self-hosted agents", "Unreal Engine", "Vagrant", "Virtualization", "Windows Containers"]
       },
       {
         date: "Apr 2021 - Sep 2021",

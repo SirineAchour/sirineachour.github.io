@@ -8,13 +8,13 @@ import { ImagePreviewDialogComponent } from '../image-preview-dialog/image-previ
   styleUrls: ['./project-preview.component.scss'],
 })
 export class ProjectPreviewComponent implements OnInit {
-  @Input() screenshots;
+  @Input() screenshots:any;
 
   constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {}
 
-  open(items, index) {
+  open(items:any, index:any) {
     const dialogRef = this.dialog.open(ImagePreviewDialogComponent, {
       width: '100%',
       //height: 'auto',

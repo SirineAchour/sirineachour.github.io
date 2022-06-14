@@ -8,13 +8,13 @@ import { MatAccordion } from '@angular/material/expansion';
 })
 export class ProjectsComponent implements OnInit, AfterViewInit {
 
-  @ViewChild("accord") accord: MatAccordion
-  @ViewChild("accordp") accordp: MatAccordion
+  @ViewChild("accord") accord: MatAccordion | undefined
+  @ViewChild("accordp") accordp: MatAccordion | undefined
   panelOpenState = true;
 
 
-  projects
-  personal_projects
+  projects: any
+  personal_projects: any
   constructor() { }
 
   ngOnInit(): void {
@@ -443,13 +443,13 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
   }
 
   sort_for_grid() {
-    this.projects.sort(function (a, b) {
+    this.projects.sort(function (a:any, b:any) {
       return a.order - b.order;
     });
   }
 
   sort_for_list() {
-    this.projects.sort(function (a, b) {
+    this.projects.sort(function (a: any, b:any) {
       return a.real_order - b.real_order;
     });
   }

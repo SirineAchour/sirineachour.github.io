@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
 
-  @Input() events;
+  @Input() events: any;
   constructor() { }
 
   ngOnInit(): void {
