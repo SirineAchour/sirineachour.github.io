@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  tech_skills
+  tech_skills: any
   availableColors = [
     { name: 'none', color: undefined },     { name: 'Primary', color: 'primary' },
     { name: 'Accent', color: 'accent' },

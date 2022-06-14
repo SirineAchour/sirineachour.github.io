@@ -7,8 +7,7 @@
     "build": "ng build --prod --output-path docs",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "requiredupdate": "ng update @angular/compiler-cli --force"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -16,7 +15,7 @@
     "@angular/cdk": "^10.2.7",
     "@angular/common": "~10.2.4",
     "@angular/compiler": "~10.2.4",
-    "@angular/core": ">=11.0.5",
+    "@angular/core": "~10.2.4",
     "@angular/flex-layout": "^12.0.0-beta.34",
     "@angular/forms": "~10.2.4",
     "@angular/material": "^10.2.7",
@@ -31,17 +30,17 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^14.0.1",
-    "@angular/cli": "^10.2.4",
+    "@angular-devkit/build-angular": "~0.1002.2",
+    "@angular/cli": "~10.2.2",
     "@angular/compiler-cli": "~10.2.4",
     "@types/jasmine": "~3.5.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/jquery": "^3.5.6",
     "@types/node": "^12.11.1",
-    "codelyzer": "^0.0.28",
+    "codelyzer": "^6.0.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
-    "karma": ">=6.3.16",
+    "karma": "~5.0.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage-istanbul-reporter": "~3.0.2",
     "karma-jasmine": "~4.0.0",

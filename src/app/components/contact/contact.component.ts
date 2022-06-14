@@ -8,17 +8,17 @@ import { DataService } from 'src/app/data.service';
 })
 export class ContactComponent implements OnInit {
 
-  linkedin;
-  linkedin_link;
-  github;
-  github_link;
-  phone;
+  linkedin:any
+  linkedin_link:any
+  github:any
+  github_link:any
+  phone:any
 
-  email;
-  phone_link
-  email_link
-  location
-  location_link
+  email:any
+  phone_link:any
+  email_link:any
+  location:any
+  location_link:any
 
   constructor(private data: DataService) { }
 

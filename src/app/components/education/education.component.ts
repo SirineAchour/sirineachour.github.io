@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EducationComponent implements OnInit {
 
-  events
+  events:any
   constructor() { }
 
   ngOnInit(): void {

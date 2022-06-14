@@ -8,8 +8,8 @@ import { Inject } from '@angular/core';
   styleUrls: ['./image-preview-dialog.component.scss'],
 })
 export class ImagePreviewDialogComponent implements OnInit, OnDestroy {
-  index;
-  final;
+  index: any;
+  final:any;
 
   constructor(
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -35,7 +35,7 @@ export class ImagePreviewDialogComponent implements OnInit, OnDestroy {
           break;
       }
     });    
-    $('#dialog').on('click', function (e) {
+    $('#dialog').on('click', function (e:any) {
       if( !(["IMG", "BUTTON", "MAT-ICON"].includes(e.target.tagName))){
         self.dialogRef.close();
       }
