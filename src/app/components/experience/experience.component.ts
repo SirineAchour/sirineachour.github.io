@@ -16,17 +16,19 @@ export class ExperienceComponent implements OnInit {
         date: "February 2022 - July 2022",
         location: "Realities",
         location_link: "https://www.realities.io/",
-        title: "Software Engineering Intern",
+        title: "Software & DevOps Engineering Intern",
         icon: "laptop",
         content: "\
-        I took up this internship with Realities.io as part of my university studies, during which, I introduced DevOps practices to the team's development workflow and developed an efficient and pertinent synchronization tool. \
+        I took up this internship with Realities.io as part of my university studies, during which, I introduced DevOps practices to the team's development workflow and developed synchronization tool. \
+        <br>\
         My tasks were mainly: \
-        - Designing, setting up and implementing CI/CD pipelines a cross-platform Unreal Engine project. \
+        <br>\
+        - Designing, setting up and implementing CI/CD pipelines for a cross-platform VR project. \
         <br>\
         - Designing and developing a tool for synchronizing large remote and local assets using git-like operations.\
         ",
         links: [],
-        skills: [ "Azure DevOps" ,"Docker", "Documentation", "Hyper-V", "Oculus Quest", "Playstation", "PowerShell", "Python", "Self-hosted agents", "Unreal Engine", "Vagrant", "Virtualization", "Windows Containers"]
+        skills: [ "Automation", "Azure DevOps" , "Debugging", "Docker", "Documentation", "Hyper-V", "Oculus Quest", "Playstation", "PowerShell", "Python", "Self-hosted agents", "Unreal Engine", "Vagrant", "Virtualization", "Windows Containers"]
       },
       {
         date: "Apr 2021 - Sep 2021",

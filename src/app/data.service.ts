@@ -11,11 +11,11 @@ export class DataService {
   static linkedin: string = "linkedin.com/in/sirine-achour/"
   static linkedin_link: string = "https://www.linkedin.com/in/sirine-achour/"
   static gender: string = "Female"
-  static email: string = "siriine.achour@outlook.com"
+  static email: string = "sirineachour@outlook.com"
   static phone: string = "+49 15 752 807 645"
   static phone_link: string = "tel:+4915752807645"
 
-  static email_link: string = "mailto:siriine.achour@outlook.com"
+  static email_link: string = "mailto:sirineachour@outlook.com"
   static location: string = "Berlin, Germany"
   static location_link: string = "https://goo.gl/maps/Pkc8fJimBPYAxDE79"
   constructor() {
