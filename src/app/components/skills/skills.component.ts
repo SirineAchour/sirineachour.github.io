@@ -26,7 +26,7 @@ export class SkillsComponent implements OnInit {
       {
         domain: "Programming Languages",
         skills: [
-          "Bash", "Batch", "C/C++", "C#", "Java","Javascript", "PowerShell", "PHP", "Python","Typescript"
+          "Bash", "Batch", "C/C++", "C#", "Java", "Javascript", "PowerShell", "PHP", "Python","Typescript"
         ]
       },
       {
@@ -50,7 +50,7 @@ export class SkillsComponent implements OnInit {
       {
         domain: "Other",
         skills:[
-          "Arduino", "Matlab", "PowerBI", "STM32", "Talend", "Unity"
+          "Arduino", "Matlab", "PowerBI", "STM32", "Unity"
         ]
       }
     ]
