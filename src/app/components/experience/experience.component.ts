@@ -13,8 +13,18 @@ export class ExperienceComponent implements OnInit {
   ngOnInit(): void {
     this.events = [
       {
+        date: "August 2022 - Present",
+        location: "realities.io",
+        location_link: "https://www.realities.io/",
+        title: "DevOps Engineer",
+        icon: "laptop",
+        content: "",
+        links: [],
+        skills: [ "Automation", "Azure DevOps" , "Azure Functions", "Azure static web apps", "Bash", "Batch", "Debugging", "Docker", "Documentation", "Hyper-V", "Oculus Quest", "Playstation", "PowerShell", "Python", "Self-hosted agents", "Unreal Engine", "Vagrant", "Virtualization", "Vue.js", "Windows Containers"]
+      },
+      {
         date: "February 2022 - July 2022",
-        location: "Realities",
+        location: "realities.io",
         location_link: "https://www.realities.io/",
         title: "Software & DevOps Engineering Intern",
         icon: "laptop",
@@ -28,7 +38,7 @@ export class ExperienceComponent implements OnInit {
         - Designing and developing a tool for synchronizing large remote and local assets using git-like operations.\
         ",
         links: [],
-        skills: [ "Automation", "Azure DevOps" , "Debugging", "Docker", "Documentation", "Hyper-V", "Oculus Quest", "Playstation", "PowerShell", "Python", "Self-hosted agents", "Unreal Engine", "Vagrant", "Virtualization", "Windows Containers"]
+        skills: [ "Automation", "Azure DevOps" , "Bash", "Batch", "Debugging", "Docker", "Documentation", "Hyper-V", "Oculus Quest", "Playstation", "PowerShell", "Python", "Self-hosted agents", "Unreal Engine", "Vagrant", "Virtualization", "Windows Containers"]
       },
       {
         date: "Apr 2021 - Sep 2021",
